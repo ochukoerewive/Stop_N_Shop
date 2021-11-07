@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding:0;
 }
-
+/* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@ body {
     display: flex;
 }
 
-.navbar-link li {
+.navbar-links li {
     list-style: none;
 
 }
@@ -56,7 +56,7 @@ body {
     background-color: white;
     border-radius: 10px;
 }
-
+/* Navbar ends */
 
 @media (max-width: 650px){
     .toggle-button {
@@ -89,6 +89,11 @@ body {
         display: flex;
     }
 
-
-
 }
+
+@media (max-width: 650px){
+    .brand-title{
+        text-align:none;
+    }
+}
+
