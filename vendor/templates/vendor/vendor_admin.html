@@ -6,6 +6,6 @@
 {% block content %}
     <div class="box">
         <h1 class="title">Vendor admin - {{ vendor.name }}</h1>
-        <a class="button is-danger is-uppercase" href=""> Log Out</a>
+        <a  href="{% url 'logout' %}" class="button $red-500 is-uppercase"> Log Out</a>
     </div>
 {% endblock %}
