@@ -45,7 +45,7 @@
     </a>
     <div class="navbar-links">
         <ul>
-            <li><a href="#">Sign in</a></li>
+            <li><a href="">Sign in</a></li>
             <li><a href="#">Register</a></li>
             <li><a href="#">Sell now</a></li>
         </ul>
@@ -83,7 +83,7 @@
         <h3 class="is-size-4 mb-4">RhodoniteStore</h3>
 
         {% if request.user.is_authenticated %}
-        <a href="{% url 'vendor_admin' %}">endor Admin</a>
+        <a href="{% url 'vendor_admin' %}">Vendor Admin</a>
         {% else %}
         <a href="{% url 'become_vendor' %}">Become vendor</a>
         {% endif %}

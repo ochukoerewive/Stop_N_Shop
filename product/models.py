@@ -37,7 +37,7 @@ class Product(models.Model):
     
     def get_thumbnail(self):
         if self.thumbnail:
-            return self.thmbnail.urls
+            return self.thumbnail.url
         else:
             if self.image:
                 self.thumbnail = self.make_thumbnail(self.image)
@@ -53,7 +53,7 @@ class Product(models.Model):
         img.thumbnail(size)
 
         thumb_io = BytesIO()
-        img.save(thum_io, 'JPEG', quality=85)
+        img.save(thumb_io, 'JPEG', quality=85)
 
         thumbnail = File(thumb_io, name=image.name)
 
