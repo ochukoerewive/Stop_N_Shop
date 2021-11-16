@@ -49,4 +49,4 @@ def add_product(request):
     else:
         form = ProductForm()
 
-    return render(request, 'add_product.html', {'form': form})
+    return render(request, 'vendor/add_product.html', {'form': form})
