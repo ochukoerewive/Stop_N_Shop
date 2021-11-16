@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
-import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,13 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = 'django-insecure-m_9r*a$7o!mir^t40!=lv!i$ixd-h!)=id^(s53d2do@55=g8a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEPLOYMENT' in os.environ
+DEBUG = True
 
-ALLOWED_HOSTS = ['Admin-rhodonitestore.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = []
 
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'vendor_admin'
@@ -44,8 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
-    'vendor',
     'product',
+    'vendor',
+   
 ]
 
 MIDDLEWARE = [
@@ -84,18 +83,12 @@ WSGI_APPLICATION = 'rhodonitestore.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.parse('postgres://pfaghrzzmizgdv:5681fa1e8fb4ef9a355c9a64b7ee0893713449570b2d421af6bbb9caa656f15b@ec2-44-194-201-94.compute-1.amazonaws.com:5432/d87d6lsktdue0v')
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
-
+}
 
 
 # Password validation
