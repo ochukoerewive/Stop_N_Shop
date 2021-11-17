@@ -6,7 +6,7 @@
 {% block content %}
 <div class="container">
     <div class="box">
-        <h1 class="title">Vendor admin - {{ vendor.name }}</h1>
+        <h1 class="tittle">Vendor admin - {{ vendor.name }}</h1>
 
         <a href="{% url 'logout' %}" class="button is-danger is-uppercase">log out</a>
     </div>
@@ -31,7 +31,7 @@
             {% for product in products %}
                 <tr>
                     <td>{{ product.title }}</td>
-                    <td>{{ product.price }}</td>
+                    <td>${{ product.price }}</td>
                 </tr>
             {% endfor %}
         </tbody>

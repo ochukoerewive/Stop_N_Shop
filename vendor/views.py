@@ -18,6 +18,8 @@ def become_vendor(request):
 
             login(request, user)
 
+            #vendor = Vendor.objects.filter(created_by=user)
+
             vendor = Vendor.objects.create(name=user.username, created_by=user)
 
             return redirect('index')
@@ -28,8 +30,8 @@ def become_vendor(request):
 
 @login_required
 def vendor_admin(request):
-    vendor = request
-    products = vendor
+    vendor = request.user.vendor
+    products = vendor.products.all()
 
     return render(request, 'vendor/vendor_admin.html', {'vendor': vendor, 'products': products})
 
@@ -39,7 +41,7 @@ def add_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
 
-        if forms.is_valid():
+        if form.is_valid():
             product = form.save(commit=False)
             product.vendor = request.user.vendor
             product.slug = slugify(product.title)
