@@ -4,18 +4,56 @@
 {% block title %} Welcome | {% endblock  %}DjangoProject
 
 {% block content %}
+
+
 <div>
     <div class="container-card">
-        <h2 class="NewestProduct">Newest Products</h2>
-
+        <h2 class="NewestProduct">Newest Products
+            <hr>
+        </h2>
     </div>
+
     {% for product in newest_products %}
-    <div class="card" style="width: 18rem;">
-        <img src="{{ product.get_thumbnail }}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">{{ product.title }}</h5>
-            <h6 class="price-tag">{{ product.price }}</h6>
-            <a href="#" class="btn btn-primary">View</a>
+
+<!--Container for Newest Products-->
+<div class="container mb-5 mt-5">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card mt-3">
+                <div class="product-1 align-items-center p-2 text-center">
+                    <img src="{{ product.get_thumbnail }}" alt="" class="rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Container for Newest Products ends-->
+
+
+
+
+
+
+    <div>
+        <div class="CardView" style="width: 18rem;">
+            <img src="{{ product.get_thumbnail }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.title }}</h5>
+                <h6 class="price-tag">{{ product.price }}</h6>
+                <a href="#" class="btn btn-primary">View</a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="CardView" style="width: 18rem;">
+            <img src="{{ product.get_thumbnail }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.title }}</h5>
+                <h6 class="price-tag">{{ product.price }}</h6>
+                <a href="#" class="btn btn-primary">View</a>
+            </div>
         </div>
     </div>
 </div>
@@ -26,7 +64,7 @@
         <h2 class="is-size-3">Newest Products</h2>
 
     </div>
-    
+
     <div class="containerTop">
         <div class="ro">
             <fiqure class="image is-4by3 mb-4">
