@@ -75,11 +75,15 @@ body {
 
 .container-card{
     width:100%;
-    padding-top: 4%;
+    
     text-align: center;
     align-items: center;
 }
-
+.container-cardtext{
+    padding-top: 2%;
+    text-align: center;
+    align-items: center;
+}
 .CardView {
     align-items: center;
 
@@ -124,6 +128,20 @@ body {
     transition: 0.5s;
 }
 /* Login section Ended */
+
+/* Home page cascading */
+
+.card  {
+     width: 100%;
+}
+
+.rounded {
+    width: 100%;
+    height: fit-content;
+}
+/* Home page cascading ends */
+
+
 
 
 

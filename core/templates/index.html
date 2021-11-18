@@ -7,7 +7,7 @@
 
 
 <div>
-    <div class="container-card">
+    <div class="container-cardtext">
         <h2 class="NewestProduct">Newest Products
             <hr>
         </h2>
@@ -16,68 +16,56 @@
     {% for product in newest_products %}
 
 <!--Container for Newest Products-->
-<div class="container mb-5 mt-5">
+<div class="container-card mb-5 mt-5">
     <div class="row">
         <!-- Card 1 -->
         <div class="col-md-4">
             <div class="card mt-3">
                 <div class="product-1 align-items-center p-2 text-center">
                     <img src="{{ product.get_thumbnail }}" alt="" class="rounded">
+                    <hr>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.title }}</h5>
+                        <h6 class="price-tag">{{ product.price }}</h6>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="col-md-4">
+            <div class="card mt-3">
+                <div class="product-1 align-items-center p-2 text-center">
+                    <img src="{{ product.get_thumbnail }}" alt="" class="rounded">
+                    <hr>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.title }}</h5>
+                        <h6 class="price-tag">{{ product.price }}</h6>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mt-3">
+                <div class="product-1 align-items-center p-2 text-center">
+                    <img src="{{ product.get_thumbnail }}" alt="" class="rounded">
+                    <hr>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.title }}</h5>
+                        <h6 class="price-tag">{{ product.price }}</h6>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </div>
 <!--Container for Newest Products ends-->
 
 
-
-
-
-
-    <div>
-        <div class="CardView" style="width: 18rem;">
-            <img src="{{ product.get_thumbnail }}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{ product.title }}</h5>
-                <h6 class="price-tag">{{ product.price }}</h6>
-                <a href="#" class="btn btn-primary">View</a>
-            </div>
-        </div>
-    </div>
-
-    <div>
-        <div class="CardView" style="width: 18rem;">
-            <img src="{{ product.get_thumbnail }}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{ product.title }}</h5>
-                <h6 class="price-tag">{{ product.price }}</h6>
-                <a href="#" class="btn btn-primary">View</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="container columns is-multiline mb-6">
-    <div class="column is-12 has-text-centered mt-6 mb-6">
-        <h2 class="is-size-3">Newest Products</h2>
-
-    </div>
-
-    <div class="containerTop">
-        <div class="ro">
-            <fiqure class="image is-4by3 mb-4">
-                <img src="{{ product.get_thumbnail }}" alt="">
-            </fiqure>
-            <h2 class="subtitle">{{ product.title }}</h2>
-            <h3 class="price is-size-6 mb-5">{{ product.price }}</h3>
-            <hr>
-
-            <a href="" class="button is-dark is-uppercase">View</a>
-        </div>
-    </div>
-    {% endfor %}
-</div>
-
+{% endfor %}
 {% endblock %}
