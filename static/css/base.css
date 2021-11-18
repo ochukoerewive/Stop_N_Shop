@@ -85,9 +85,19 @@ body {
 
 }
 
-/* Login section */
+
+
+/* Login section and Registration */
+.registrationForm {
+    width: 60%;
+    height: 45vh;
+    padding: 50px;
+    margin: auto;
+    align-items: center;
+    }
+
+
 .login {
-  
     padding-top: 5%;
     text-align: center;
     align-items: center;
@@ -105,7 +115,6 @@ body {
     box-sizing: border-box;
 }
 
-
 .loginForm:hover{
     -webkit-box-shadow: 6px 5px 10px -2px rgba(34, 34, 34, 0.69); 
     box-shadow: 6px 5px 10px -2px rgba(39, 39, 39, 0.69);
@@ -114,7 +123,6 @@ body {
 .loginForm{
     transition: 0.5s;
 }
-
 /* Login section Ended */
 
 
