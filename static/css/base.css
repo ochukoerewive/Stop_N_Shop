@@ -71,8 +71,6 @@ body {
 }
 
 
-
-
 .container-card{
     width:100%;
     
@@ -80,13 +78,12 @@ body {
     align-items: center;
 }
 .container-cardtext{
-    padding-top: 2%;
+    padding-top: 12%;
     text-align: center;
     align-items: center;
 }
 .CardView {
     align-items: center;
-
 }
 
 
