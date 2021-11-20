@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} {{category.title}} | {% endblock  %}
+
+{% block content %}
+
+
+<div>
+    <div class="container-cardtext">
+        <h2 class="NewestProduct"> {{category.title}} </h2>
+    </div>
+
+    {% for product incategory.products.all %}
+
+<!--Container for Newest Products-->
+    {% include 'product/parts/list_item.html' %}
+<!--Container for Newest Products ends-->
+
+{% endfor %}
+</div>
+{% endblock %}
