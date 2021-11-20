@@ -16,56 +16,10 @@
     {% for product in newest_products %}
 
 <!--Container for Newest Products-->
-<div class="container-card mb-5 mt-5">
-    <div class="row">
-        <!-- Card 1 -->
-        <div class="col-md-4">
-            <div class="card mt-3">
-                <div class="product-1 align-items-center p-2 text-center">
-                    <img src="{{ product.get_thumbnail }}" alt="" class="rounded">
-                    <hr>
-                    <div class="card-body">
-                        <h5 class="card-title">{{ product.title }}</h5>
-                        <h6 class="price-tag">{{ product.price }}</h6>
-                        <a href="#" class="btn btn-primary">View</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card mt-3">
-                <div class="product-1 align-items-center p-2 text-center">
-                    <img src="{{ product.get_thumbnail }}" alt="" class="rounded">
-                    <hr>
-                    <div class="card-body">
-                        <h5 class="card-title">{{ product.title }}</h5>
-                        <h6 class="price-tag">{{ product.price }}</h6>
-                        <a href="#" class="btn btn-primary">View</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card mt-3">
-                <div class="product-1 align-items-center p-2 text-center">
-                    <img src="{{ product.get_thumbnail }}" alt="" class="rounded">
-                    <hr>
-                    <div class="card-body">
-                        <h5 class="card-title">{{ product.title }}</h5>
-                        <h6 class="price-tag">{{ product.price }}</h6>
-                        <a href="#" class="btn btn-primary">View</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-</div>
+    {% include 'product/parts/list_item.html' %}
 <!--Container for Newest Products ends-->
 
 
 {% endfor %}
+</div>
 {% endblock %}
