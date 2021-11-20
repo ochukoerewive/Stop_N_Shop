@@ -73,12 +73,11 @@ body {
 
 .container-card{
     width:100%;
-    
     text-align: center;
     align-items: center;
 }
 .container-cardtext{
-    padding-top: 12%;
+    padding-top: 14%;
     text-align: center;
     align-items: center;
 }
@@ -122,7 +121,7 @@ body {
 }
 
 .loginForm{
-    transition: 0.5s;
+    transition: 0.15s;
 }
 /* Login section Ended */
 
