@@ -50,6 +50,9 @@
     </a>
     <div class="navbar-links">
         <ul>
+            {% for category in menu_categories %}
+            <li><a href="{% url 'category' category.slug %}" class="navbar-item">{{ category.title }}</a></li>
+            {% endfor %}
             <li><a href="{% url 'index' %}">Home</a></li>
             <li><a href="{% url 'vendor_admin' %}">Sign in</a></li>
             <li><a href="{% url 'become_vendor' %}">Register</a></li>
