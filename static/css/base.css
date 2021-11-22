@@ -114,8 +114,6 @@ body {
 /* Login section Ended */
 
 
-
-
 .rounded {
     width: 100%;
     height: fit-content;
@@ -160,11 +158,10 @@ body {
     text-align: center;
 }
 
-
 .Button-control{
-    
-    align-items: center;
+     align-items: center;
 }
+
 
 
 /* Navbar ends */
