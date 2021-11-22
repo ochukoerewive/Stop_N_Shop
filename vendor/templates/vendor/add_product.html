@@ -3,9 +3,11 @@
 {% block title %} Add Product | {% endblock %}
 
 {% block content %}
-<h1 class="title"> Add Product</h1>
-
-<form METHOD="post" action="." enctype="multipart/form-data">
+<section class="">
+   
+<h1 class="add-product"> Add Product</h1>
+<hr>
+<form METHOD="post" action="." enctype="multipart/form-data" class="addproduct">
     {% csrf_token %}
 
     {{ form.as_p }}
@@ -17,5 +19,5 @@
     </div>
 
 </form>
-
+</section>
 {% endblock %}
