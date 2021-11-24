@@ -199,6 +199,25 @@ body {
 
 }
 
+/**
+* NOTIFICATION TOAST
+*/
+
+@keyframes show-toast {
+    0% {bottom: -100%;}
+    20% {bottom: 50%;}
+    80% {bottom: 50%;}
+    100% {bottom: -100%;}
+}
+.notification.is-toast {
+    position: fixed;
+    bottom:100%;
+    right: 20px;
+    animation-name: show-toast;
+    animation-duration: 4s;
+}
+
+
 @media (max-width: 650px){
     .brand-title{
         text-align:none;
