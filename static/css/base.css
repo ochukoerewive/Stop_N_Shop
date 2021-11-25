@@ -7,6 +7,8 @@ body {
     padding:0;
     background: rgb(250, 214, 159);
 }
+
+
 /* Navbar Styling */
 
 
@@ -62,17 +64,7 @@ body {
     border-radius: 10px;
 
 }
-
-
-
-.container-cardtext{
-    padding-top: 14%;
-    text-align: center;
-    align-items: center;
-}
-.CardView {
-    align-items: center;
-}
+*/
 
 
 
@@ -162,6 +154,25 @@ body {
      align-items: center;
 }
 
+.add-product{
+    margin-top:15%;
+}
+
+
+/* CART STYLING */
+.titleCart{
+    margin-top:15%;
+    text-align: center;
+    margin-bottom: 30px;
+ }
+.cartinfo{
+    text-align: center;
+}
+
+ #payment-form{
+    text-align: center;
+    margin-bottom:30px ;
+ }
 
 
 /* Navbar ends */
@@ -198,6 +209,8 @@ body {
     }
 
 }
+
+
 
 /**
 * NOTIFICATION TOAST

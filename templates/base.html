@@ -84,7 +84,7 @@
                             {% if request.user.is_superuser %}
                             <a href="{% url 'vendor_admin' %}" class="dropdown-item">Vendor Admin</a>
                             {% endif %}
-                            <a href="" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'add_product' %}" class="dropdown-item">Add Product</a>
                             <a href="{% url 'logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
                             <a href="{% url 'become_vendor' %}" class="dropdown-item">Register</a>
@@ -105,15 +105,12 @@
 
 
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
-                            href="">
+                        <a class="text-info text-black nav-link" href="{% url 'cart' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
-                                    {% if grand_total %}
-                                    ${{ grand_total|floatformat:2 }}
-                                    {% else %}
-                                    $0.00
+                                    {% if cart %}
+                                    ({{ cart|length }})
                                     {% endif %}
                                 </p>
                             </div>
