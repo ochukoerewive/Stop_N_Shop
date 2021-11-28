@@ -175,6 +175,14 @@ body {
  }
 
 
+.rowCart {
+    margin-top:15%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
 /* Navbar ends */
 
 @media (max-width: 650px){
