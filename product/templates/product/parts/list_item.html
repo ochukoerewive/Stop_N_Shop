@@ -1,24 +1,18 @@
-
 <!--Container for Newest Products-->
-<div class="container-card mb-5 mt-5">
-    <div class="row">
-        <!-- Card 1 -->
-        <div class="col-md-4">
-            <div class="card mt-3">
-                <div class="product-1 align-items-center p-2 text-center">
-                    <img src="{{ product.get_thumbnail }}" alt="" class="rounded">
-                    <hr>
-                    <div class="card-body">
-                        <h5 class="card-title">{{ product.title }}</h5>
-                        <h6 class="price-tag">{{ product.price }}</h6>
-                        <hr>
-                        <a href="{% url 'product' product.category.slug product.slug %}" class="btn btn-primary viewpage">View</a>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
 
+
+
+
+<div class="container">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+        <div class="card">
+            <img src="{{ product.get_thumbnail }}" alt="" class="rounded">
+            <div class="card-header">
+                <h5 class="card-title">{{ product.title }}</h5>
+                <h6 class="price-tag">{{ product.price }}</h6>
+                <a href="{% url 'product' product.category.slug product.slug %}"
+                    class="btn btn-primary viewpage">View</a>
+            </div>     
+        </div>
     </div>
 </div>
-<!--Container for Newest Products-->

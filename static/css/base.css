@@ -1,71 +1,11 @@
-
 @import "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css";
 
 
 body {
     margin: 0;
-    padding:0;
-    background: rgb(250, 214, 159);
-}
-
-
-/* Navbar Styling */
-
-
-/*
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(107, 0, 84);
-    color:white;
-}
-.brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
-}
-
-.navbar-links ul {
-    margin: 0;
     padding: 0;
-    display: flex;
+    background: rgb(194, 194, 194);
 }
-
-.navbar-links li {
-    list-style: none;
-
-}
-
-.navbar-links li a {
-   text-decoration: none;
-   color:white;
-   padding:1rem;
-   display:block; 
-}
-.navbar-links li:hover {
-    background-color: #555;
-}
-
-.toggle-button {
-    position: absolute;
-    top:.75rem;
-    right: 1 rem;
-    display: none;
-    flex-direction:column;
-    justify-content:space-between;
-    width :30px;
-    height: 21px;
-}
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-
-}
-*/
-
 
 
 /* Login section and Registration */
@@ -74,13 +14,18 @@ body {
     padding: 220px;
     margin: auto;
     align-items: center;
-    }
+}
 
 
 .login {
-    padding-top: 100px;
+
+    padding-top: 200px;
     text-align: center;
     align-items: center;
+}
+
+.images {
+    width: 100%;
 }
 
 .loginForm {
@@ -88,21 +33,22 @@ body {
     height: 45vh;
     padding: 50px;
     margin: auto;
-    
+
     border-radius: 20px;
     align-items: center;
-    
+
     box-sizing: border-box;
 }
 
-.loginForm:hover{
-    -webkit-box-shadow: 6px 5px 10px -2px rgba(34, 34, 34, 0.69); 
+.loginForm:hover {
+    -webkit-box-shadow: 6px 5px 10px -2px rgba(34, 34, 34, 0.69);
     box-shadow: 6px 5px 10px -2px rgba(39, 39, 39, 0.69);
 }
 
-.loginForm{
+.loginForm {
     transition: 0.15s;
 }
+
 /* Login section Ended */
 
 
@@ -110,97 +56,188 @@ body {
     width: 100%;
     height: fit-content;
 }
+
 /* Home page cascading ends */
 
 /* admin page cascading ends */
 .vendoradmin {
     padding-top: 220px;
     padding-left: 15%;
-    width:80%;
+    width: 80%;
     text-align: center;
     align-items: center;
 }
 
-.vendoradmin-box{
-    width:80;
+.vendoradmin-box {
+    width: 80;
     padding-left: 15%;
 }
 
-.boxproduct{
+.boxproduct {
     padding-top: 60px;
 }
+
 /* admin page cascading ends */
 /* index page cascading ends */
 
-.container-cardtext{
+.container-cardtext {
     padding-top: 13%;
+    width: 100%
 }
 
-.NewestProduct{
+.NewestProduct {
     text-align: center;
 }
-.card  {
-    width: 60%;
-    margin:100px;
+
+/* trying to get the card wworking */
+.container {
+    width: 90%;
+    height: auto;
+    margin-left: 6%;
+    display: flex;
 }
 
-.add-product{
-    padding-top: 200px;
-    text-align: center;
-    }
 
-.addproduct{
+.card {
+    width: 200px;
+    height: 340px;
+    padding-top: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+
+}
+
+
+
+
+.container-card {
+    display: flex;
+}
+
+.overflow-hidden {
+    width: 150px;
+}
+
+.vendorlist{
+    margin-top: 40px;
+}
+
+
+
+
+.add-product {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.addproduct {
     padding-top: 2%;
     text-align: center;
 }
 
-.Button-control{
-     align-items: center;
+.Button-control {
+    align-items: center;
 }
 
-.add-product{
-    margin-top:15%;
+.add-product {
+    margin-top: 15%;
 }
 
+.vendorlist {
+    width: 40%;
+    padding-top: 150px;
+    text-align: center;
+    margin-left: 30%;
+}
 
 /* CART STYLING */
-.titleCart{
-    margin-top:15%;
+.titleCart {
+    margin-top: 15%;
     text-align: center;
     margin-bottom: 30px;
- }
-.cartinfo{
+}
+
+.cartinfo {
     text-align: center;
 }
 
- #payment-form{
+#payment-form {
     text-align: center;
-    margin-bottom:30px ;
- }
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
 
 
 .rowCart {
-    margin-top:15%;
+    margin-top: 15%;
     text-align: center;
     margin-bottom: 30px;
 }
+
+/* INDEX-MEDIA PAGE SETTING */
+
+@media (max-width: 911px) {
+    .container {
+        width: 100%;
+        margin-left: 4%;
+
+    }
+
+    .container-cardtext {
+        width: auto;
+    }
+
+    .linehr {
+        display: none;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: auto;
+        margin-left: 0%;
+
+    }
+
+    .container-cardtext {
+        width: 100%;
+        text-align: center;
+    }
+
+    .NewestProduct {
+        margin-top: 5%;
+        text-align: center;
+    }
+
+}
+
 
 
 
 /* Navbar ends */
 
-@media (max-width: 650px){
+@media (max-width: 650px) {
     .toggle-button {
-       display: flex;
-        
+        display: flex;
+
     }
+
     .navbar-links {
-      display: none;
-      width: 100%;
+        display: none;
+        width: 100%;
     }
 
     .navbar {
-        flex-direction: column;
+
         align-items: flex-start;
     }
 
@@ -208,6 +245,7 @@ body {
         width: 100%;
         flex-direction: column;
     }
+
     .navbar-links li {
         text-align: center;
     }
@@ -220,45 +258,59 @@ body {
         display: flex;
     }
 
+    .main-logo-link {
+        font-display: center;
+    }
+
 }
 
 
 
-/**
-* NOTIFICATION TOAST
-*/
+
 
 @keyframes show-toast {
-    0% {bottom: -100%;}
-    20% {bottom: 50%;}
-    80% {bottom: 50%;}
-    100% {bottom: -100%;}
+    0% {
+        bottom: -100%;
+    }
+
+    20% {
+        bottom: 50%;
+    }
+
+    80% {
+        bottom: 50%;
+    }
+
+    100% {
+        bottom: -100%;
+    }
 }
+
 .notification.is-toast {
     position: fixed;
-    bottom:100%;
+    bottom: 100%;
     right: 20px;
     animation-name: show-toast;
     animation-duration: 4s;
 }
 
 
-@media (max-width: 650px){
-    .brand-title{
-        text-align:none;
+@media (max-width: 650px) {
+    .brand-title {
+        text-align: none;
     }
 }
 
-@media (max-width: 750px){
+@media (max-width: 750px) {
     .loginForm {
         width: 100%;
         height: none;
         padding: none;
         margin: none;
         background-color: #fff;
-        
+
         align-items: center;
-        
-        box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
-    
-}
+
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+
+    }

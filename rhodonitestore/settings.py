@@ -38,6 +38,13 @@ LOGOUT_REDIRECT_URL = 'index'
 SESSION_COOKIE_AGE = 86400
 CART_SESSION_ID = 'cart'
 
+# VENDOR EMAIL NOTIFICATION
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'kandochglobalservices@gmail.com'
+EMAIL_HOST_PASSWORD = '1980jesus'
 # Application definition
 
 INSTALLED_APPS = [

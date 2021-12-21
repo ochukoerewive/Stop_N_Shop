@@ -12,14 +12,16 @@
             <hr>
         </h2>
     </div>
+</div>
 
+<div class="container">
     {% for product in newest_products %}
 
-<!--Container for Newest Products-->
+    <!--Container for Newest Products-->
     {% include 'product/parts/list_item.html' %}
-<!--Container for Newest Products ends-->
+    <!--Container for Newest Products ends-->
 
 
-{% endfor %}
+    {% endfor %}
 </div>
 {% endblock %}

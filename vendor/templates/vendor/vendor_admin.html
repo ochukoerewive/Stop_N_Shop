@@ -8,8 +8,11 @@
     <div class="container">
         <div class="box">
             <h1 class="tittle">Vendor admin - {{ vendor.name }}</h1>
+            <strong>My balance:</strong>${{ vendor.get_balance }} <br>
+            <strong>My paid amount:</strong>${{ vendor.get_paid_amount }} <br>
             <hr>
 
+            <a href="{% url 'edit_vendor' %}" class="button is-danger is-uppercase">Edit</a>
             <!--  <a href="{% url 'logout' %}" class="button is-danger is-uppercase">log out</a>  -->
         </div>
     </div>
@@ -61,10 +64,11 @@
                     </div>
                     <div class="column ie-12">
                         <b>Name:</b> {{ order.first_name }} {{ order.last_name }} <br>
-                        <b>Address:</b> {{ order.address }} <br>
+                        <b>Phone:</b> {{ order.address }} <br>
                         <b>Zip and place:</b> {{ order.zipcode }} {{ order.place }} <br>
-                        <b>E-mail:</b> {{ order.email }} <br>
-                        <b>Phone:</b> {{ order.phone }}
+                        <b>Address:</b> {{ order.phone }}<br>
+                        <b>E-mail:</b> {{ order.email }} 
+                        
 
                         <table class="table is-fullwidth mt-4">
                             <thead>
