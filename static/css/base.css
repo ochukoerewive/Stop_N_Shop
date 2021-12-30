@@ -114,8 +114,11 @@ body {
 .overflow-hidden {
     width: 150px;
 }
-
-
+img {
+    margin-top: 10%;
+    width: 100%;
+    position: center;
+}
 
 .add-product {
     padding-top: 10px;
@@ -142,7 +145,7 @@ body {
     margin-left: 30%;
 }
 .box{
-    margin-top: -120px;
+    margin-top: 40px;
   
 }
 /* CART STYLING */
@@ -161,8 +164,6 @@ body {
     margin-bottom: 30px;
 }
 
-
-
 .rowCart {
     margin-top: 15%;
     text-align: center;
@@ -175,7 +176,6 @@ body {
     .container {
         width: 100%;
         margin-left: 4%;
-
     }
 
     .container-cardtext {
@@ -185,14 +185,12 @@ body {
     .linehr {
         display: none;
     }
-
 }
 
 @media (max-width: 800px) {
     .container {
         width: auto;
         margin-left: 0%;
-
     }
 
     .container-cardtext {
@@ -205,6 +203,17 @@ body {
         text-align: center;
     }
 
+    img {
+        margin-top: 20%;
+        
+    }
+
+}
+@media (max-width: 401px){
+    img {
+        margin-top: 40%;
+        
+    }
 }
 
 

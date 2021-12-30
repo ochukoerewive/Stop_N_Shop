@@ -12,9 +12,9 @@
     {% for vendor in vendors %}
     <div class="column is-3">
         <div class="box">
-            <h2 class="vendorlist">{{ vendor.name }}</h2>
+            <h2 class="">{{ vendor.name }}</h2>
             <hr>
-            <a href="{% url 'vendor' vendor.id %}">View</a>
+            <a href="{% url 'vendor_admin' %}">View</a>
         </div>
     </div>
     {% endfor %}
