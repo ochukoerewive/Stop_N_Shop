@@ -7,7 +7,6 @@ body {
     background: rgb(194, 194, 194);
 }
 
-
 /* Login section and Registration */
 .registrationForm {
     height: 45vh;
@@ -16,9 +15,7 @@ body {
     align-items: center;
 }
 
-
 .login {
-
     padding-top: 200px;
     text-align: center;
     align-items: center;
@@ -110,9 +107,6 @@ body {
 
 }
 
-
-
-
 .container-card {
     display: flex;
 }
@@ -121,9 +115,6 @@ body {
     width: 150px;
 }
 
-.vendorlist{
-    margin-top: 40px;
-}
 
 
 .add-product {
@@ -150,7 +141,10 @@ body {
     text-align: center;
     margin-left: 30%;
 }
-
+.box{
+    margin-top: -120px;
+  
+}
 /* CART STYLING */
 .titleCart {
     margin-top: 15%;
@@ -307,3 +301,4 @@ body {
         box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
 
     }
+}
