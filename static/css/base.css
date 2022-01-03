@@ -7,6 +7,11 @@ body {
     background: rgb(194, 194, 194);
 }
 
+.container-fluid{
+    width:100%;
+}
+
+
 /* Login section and Registration */
 .registrationForm {
     height: 45vh;
@@ -98,13 +103,11 @@ body {
 .card {
     width: 200px;
     height: 340px;
-    padding-top: 10px;
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
     transition: 0.3s;
     text-align: center;
-
 }
 
 .container-card {
@@ -170,7 +173,18 @@ img {
     margin-bottom: 30px;
 }
 
+
+
 /* INDEX-MEDIA PAGE SETTING */
+@media (max-width: 1074px){
+
+    .container-fluid{
+        width:100%;
+        }
+    
+}
+
+
 
 @media (max-width: 911px) {
     .container {
@@ -218,7 +232,6 @@ img {
 
 
 
-
 /* Navbar ends */
 
 @media (max-width: 650px) {
@@ -260,6 +273,13 @@ img {
 
 }
 
+@media (max-width: 360px){
+    .NewestProduct {
+        margin-top: 70px;
+        text-align: center;
+    }
+   
+}
 
 
 
