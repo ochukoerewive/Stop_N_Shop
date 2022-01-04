@@ -107,4 +107,28 @@ Also tested across multiple mobile devices and bowsers.
 Tested on hardware devices, using Dell and Hp pcs.
 
 # Performace testing
-![Performace testing](static/wireframes/1.JPG)
+![Performace testing](media/readmeFiles/testing0.JPG)
+
+## Code Validation
+
++ W3C CSS Validator to validate CSS.
+
+![css](media/readmeFiles/CSS-nalidation.JPG)
+
++ Nu Html Checker to test HTML.
++ Python code was validated using the ExtendsClass Python Syntax Checker with no syntax errors found.
+#
+
+# DEOLOYMENT
+
+## Heroku Deployment
+
+
+## Credits
+
+### Content
+The content was created by following the Code Institute tutorial for the Full Stack Django-Phyton project as a base, and heavily modified by myself to suit my use case
+
+## Acknowledgements
+* Code Institute group on slack
++ Tutor support team
