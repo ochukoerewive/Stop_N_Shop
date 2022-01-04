@@ -86,7 +86,11 @@ The wireframes was designed using corel-draw platforms. It can be located in a f
 6.  Working Navbar
 7.  Edit/Delete functionality for user
 8.  Add to cart functionality
-9.  Stripe payments system
+9.  Stripe payments system(the card number to use is:
+
++ 4242 4242 4242 4242 4242
++ Then the date should be future for the stripe system to work)
+
 10. Multiple Apps
 11. Data Modeling
 #
@@ -121,10 +125,12 @@ Tested on hardware devices, using Dell and Hp pcs.
 
 # DEOLOYMENT
 
+
+
 ## Heroku Deployment
 
 
-## Credits
+
 
 ### Content
 The content was created by following the Code Institute tutorial for the Full Stack Django-Phyton project as a base, and heavily modified by myself to suit my use case
