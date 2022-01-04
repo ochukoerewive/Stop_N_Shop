@@ -89,3 +89,22 @@ The wireframes was designed using corel-draw platforms. It can be located in a f
 9.  Stripe payments system
 10. Multiple Apps
 11. Data Modeling
+#
+## TECHNOLOGY USED
+1.  HTML5
+2.  CSS
+3.  JavaScript
+4.  Python 3
+5.  BootStrap
+6.  Stripe payments
+7.  Amazon
+
+#
+## TESTING
+The site was tested in google chrome, mozilla and windows browsers.
+# Compatibility testing
+Also tested across multiple mobile devices and bowsers.
+Tested on hardware devices, using Dell and Hp pcs.
+
+# Performace testing
+![Performace testing](static/wireframes/1.JPG)
