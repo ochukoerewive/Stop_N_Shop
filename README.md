@@ -24,3 +24,6 @@ This is to ensure the major focus is carried out which are the following;
 + View products by category.
 + View images and details for each product.
 + Add to cart from the detail or search pages.
+
+Other User Stories are;
++ 
