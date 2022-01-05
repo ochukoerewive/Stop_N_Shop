@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-m_9r*a$7o!mir^t40!=lv!i$ixd-h!)=id^(s53d2do@55=g8a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['rhodonitestore.herokuapp.com','localhost']
 
 STRIPE_PUB_KEY = 'pk_test_51Jzwp9APQRv9kZVLpBcPcUzENuuJ8hNRjZ7zB5fKsFmCHN3YjkmlEb0E7efqwJfkYmJWDwySloFbTmhs1GgBHvxH00Q126HG2y'
 STRIPE_SECRET_KEY = 'sk_test_51Jzwp9APQRv9kZVLbTj9mMwE1GjUWPCcOKruyWz3WhkAvR9zmbqVBUddg63gHPbnU5USEc50UxFeIoPkseIcOaaT00pMZsUdJn'
@@ -100,12 +100,17 @@ WSGI_APPLICATION = 'rhodonitestore.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 
