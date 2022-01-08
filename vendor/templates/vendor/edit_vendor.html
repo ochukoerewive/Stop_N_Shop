@@ -5,7 +5,7 @@
 {% block content %}
 
 <div class="registrationForm">
-    <h1 class="title">Edit vendor</h1>
+    <h1 class="vendoredit">Edit Vendor Info</h1>
 
     <form method="post" action=".">
         {% csrf_token %}
@@ -32,7 +32,8 @@
 
         <div class="field">
             <div class="control">
-                <button class="button is-dark m-1">Save changes</button>
+                <button  class="col s12 btn btn-primary" type="button">Save Changes</button>
+               
             </div>
         </div>
     </form>

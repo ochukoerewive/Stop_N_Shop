@@ -51,6 +51,12 @@ body {
 .subtitle{
     text-align: center;
 }
+.vendoredit{
+    margin-top: 90px;
+    width: 90%;
+    margin-left: 40px;
+    text-align: center;
+}
 /*
 .loginForm:hover {
     -webkit-box-shadow: 6px 5px 10px -2px rgba(34, 34, 34, 0.69);
@@ -73,9 +79,9 @@ body {
 
 /* admin page cascading ends */
 .vendoradmin {
-    padding-top: 220px;
-    padding-left: 15%;
-    width: 80%;
+    padding-top: 156px;
+    width: 100%;
+    margin-left:-45px;
     text-align: center;
     align-items: center;
 }
@@ -150,10 +156,10 @@ img {
 }
 
 .vendorlist {
-    width: 40%;
-    padding-top: 150px;
+    width: 70%;
+    padding-top: 140px;
     text-align: center;
-    margin-left: 30%;
+    margin-left: 15%;
 }
 .box{
     margin-top: 40px;
