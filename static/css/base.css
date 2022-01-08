@@ -90,6 +90,10 @@ body {
     text-align: center;
 }
 
+.container-product{
+    width: 80%;
+    background-color: black;
+}
 /* trying to get the card wworking */
 .container {
     width: 90%;
