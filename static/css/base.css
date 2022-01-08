@@ -14,8 +14,7 @@ body {
 
 /* Login section and Registration */
 .registrationForm {
-    height: 45vh;
-    padding: 120px;
+    padding: 40px;
     margin: auto;
     align-items: center;
 }
@@ -37,7 +36,12 @@ body {
     margin: auto;
     align-items: center;  
 }
+.title{
+    margin-top:100px;
+    width:90%;
+    text-align: center;
 
+}
 /*
 .loginForm:hover {
     -webkit-box-shadow: 6px 5px 10px -2px rgba(34, 34, 34, 0.69);
