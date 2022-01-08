@@ -100,6 +100,7 @@ body {
 /* trying to get the card wworking */
 .container {
     width: 90%;
+    height: auto;
     margin:auto;
     display: flex;
 }
@@ -110,6 +111,7 @@ body {
     margin-left: 5%;
 }
 
+/*
 .card {
     width: 200px;
     height: 340px;
@@ -119,7 +121,7 @@ body {
     transition: 0.3s;
     text-align: center;
 }
-
+*/
 .container-card {
     display: flex;
 }
