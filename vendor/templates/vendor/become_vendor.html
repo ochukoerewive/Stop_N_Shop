@@ -2,24 +2,55 @@
 
 {% block content %}
 
+
+
 <div class="registrationForm">
-<h1 class="title">Become a Vendor today</h1>
+    <h1 class="title">Register to Become a Vendor</h1>
 
-<form method="post" action=".">
-    {% csrf_token %}
+    <form method="post" class="loginForm" action=".">
+        {% csrf_token %}
 
-    {{ form.as_p }}
 
-    <div class="field">
-        <div class="control">
-            <button class="button is-dark is-uppercase">Sign Up</button>
-        </div>
-    </div>
+          {{ form.as_p }}
+          
+          <!--
+        <div class="form-group">
+            <div>
+                <i class="fas fa-user-circle prefix"></i>
+                <label for="username">First name</label>
+                <input type="text" class="form-control" name="username" placeholder="Username" minilength="5"
+                    maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+            </div>
+          
+            <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" name="lastname" placeholder="Last name" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
 
-</form>
+            
+            <div>
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-8">
+                    <input type="password" class="form-control" id="Password" required>
+                </div>
+            </div>
 
-<hr>
-<h2 class="subtitle">Already have an account? <a href="{% url 'login' %}">Log in</a> </h2>
+            <br>
+
+            <div class="field">
+                <div class="control">
+                    <button class="button is-dark is-uppercase">Sign Up</button>
+                </div>
+            </div>
+        -->
+    </form>
+
+    <hr>
+    <h2 class="subtitle">Already have an account? <a href="{% url 'login' %}">Log in</a> </h2>
 
 </div>
 {% endblock %}

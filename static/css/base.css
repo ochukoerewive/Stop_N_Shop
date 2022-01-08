@@ -33,12 +33,11 @@ body {
 .loginForm {
     width: 70%;
     height: 45vh;
-    padding: 30px;
+    padding: 20px;
     margin: auto;
-    align-items: center;
-
-  
+    align-items: center;  
 }
+
 /*
 .loginForm:hover {
     -webkit-box-shadow: 6px 5px 10px -2px rgba(34, 34, 34, 0.69);
@@ -192,6 +191,11 @@ img {
 
     .linehr {
         display: none;
+    }
+    .registrationForm {
+       margin-top: 10px;
+       margin-left: 10px;
+        align-items: center;
     }
 }
 
