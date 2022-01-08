@@ -62,7 +62,7 @@ INSTALLED_APPS = [
     'vendor',
 
     # Other
-    'storages',
+   # 'storages',
 ]
 
 MIDDLEWARE = [
