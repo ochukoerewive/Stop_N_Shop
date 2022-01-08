@@ -17,12 +17,16 @@ body {
     padding: 40px;
     margin: auto;
     align-items: center;
+    background: url('media/loginBackground.jpg') no-repeat;
+    background-size: cover;
 }
 
 .login {
     padding-top: 100px;
     text-align: center;
     align-items: center;
+    background: url('media/loginBackground.jpg') no-repeat;
+    background-size: cover;
 }
 
 .images {
@@ -35,6 +39,8 @@ body {
     padding: 20px;
     margin: auto;
     align-items: center;  
+    background: url('media/loginBackground.jpg') no-repeat;
+    background-size: cover;
 }
 .title{
     margin-top:70px;
