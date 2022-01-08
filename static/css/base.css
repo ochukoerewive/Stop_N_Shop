@@ -193,6 +193,7 @@ img {
         display: none;
     }
     .registrationForm {
+        width:90%;
        margin-top: 3px;
        margin-left: 2px;
         align-items: center;
