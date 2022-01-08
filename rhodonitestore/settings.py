@@ -17,12 +17,11 @@ import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'j2yekzi4)mk+w3dh755#0s_c*ej@e_&grp$*#2xz3a)%%0-yvj')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
@@ -31,6 +30,7 @@ ALLOWED_HOSTS = ['rhodonitestore.herokuapp.com','localhost']
 
 STRIPE_PUB_KEY = 'pk_test_51Jzwp9APQRv9kZVLpBcPcUzENuuJ8hNRjZ7zB5fKsFmCHN3YjkmlEb0E7efqwJfkYmJWDwySloFbTmhs1GgBHvxH00Q126HG2y'
 STRIPE_SECRET_KEY = 'sk_test_51Jzwp9APQRv9kZVLbTj9mMwE1GjUWPCcOKruyWz3WhkAvR9zmbqVBUddg63gHPbnU5USEc50UxFeIoPkseIcOaaT00pMZsUdJn'
+STRIPE_WH_SECRET = 'we_1KFSC3APQRv9kZVLXPpYW1km'
 
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'vendor_admin'
@@ -104,16 +104,19 @@ WSGI_APPLICATION = 'rhodonitestore.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
+   DATABASES = {
+       'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+   }
 else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
+   DATABASES = {
+       'default': {
+           'ENGINE': 'django.db.backends.sqlite3',
+           'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+       }
+   }
+# DATABASES = {
+#      'default': dj_database_url.parse('postgres://rxdpnusmsymnaw:e93aa4bc4d00357cbb32976a78e2af9023fc14b7430827d3d360b709003afb2e@ec2-3-227-55-25.compute-1.amazonaws.com:5432/d358fueoidjt7d'),
+# }
 
 
 
