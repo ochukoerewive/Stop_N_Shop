@@ -37,10 +37,13 @@ body {
     align-items: center;  
 }
 .title{
-    margin-top:100px;
+    margin-top:70px;
     width:90%;
+    margin-left: 40px;
     text-align: center;
-
+}
+.subtitle{
+    text-align: center;
 }
 /*
 .loginForm:hover {
@@ -199,8 +202,11 @@ img {
     .registrationForm {
         width:90%;
        margin-top: 3px;
-       margin-left: 2px;
+       margin-left: 43px;
         align-items: center;
+    }
+    .title{
+
     }
 }
 
