@@ -31,17 +31,15 @@ body {
 }
 
 .loginForm {
-    width: 90%;
+    width: 70%;
     height: 45vh;
     padding: 30px;
     margin: auto;
-
-    border-radius: 20px;
     align-items: center;
 
-    box-sizing: border-box;
+  
 }
-
+/*
 .loginForm:hover {
     -webkit-box-shadow: 6px 5px 10px -2px rgba(34, 34, 34, 0.69);
     box-shadow: 6px 5px 10px -2px rgba(39, 39, 39, 0.69);
@@ -90,10 +88,6 @@ body {
     text-align: center;
 }
 
-.container-product{
-    width: 80%;
-    background-color: black;
-}
 /* trying to get the card wworking */
 .container {
     width: 90%;
@@ -316,8 +310,7 @@ img {
 @media (max-width: 750px) {
     .loginForm {
         width: 100%;
-        margin-top: 10px;
+        margin-top: 5px;
         align-items: center;
-        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     }
 }
