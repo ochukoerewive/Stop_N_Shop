@@ -5,19 +5,18 @@
 
 {% block content %}
 <div class="vendoradmin">
-    <div class="container">
-        <div class="box">
-            <h1 class="tittle">Vendor admin - {{ vendor.name }}</h1>
+    <div class="box">
+        <h1 class="tittle">Vendor admin - {{ vendor.name }}</h1>
+        <a href="{% url 'edit_vendor' %}" class="button is-danger is-uppercase">Edit Profile</a>
+        <div>
             <strong>My balance:</strong>${{ vendor.get_balance }} <br>
-            <strong>My paid amount:</strong>${{ vendor.get_paid_amount }} <br>
-            <hr>
-
-            <a href="{% url 'edit_vendor' %}" class="button is-danger is-uppercase">Edit</a>
-            <!--  <a href="{% url 'logout' %}" class="button is-danger is-uppercase">log out</a>  -->
+            <strong>My paid amount:</strong>${{ vendor.get_paid_amount }}
         </div>
     </div>
+    <br>
 
-    <div class="box">
+
+    <div class="boxproduct">
         <h2 class="is-size-3 mb-4 ">My products</h2>
 
         <a href="{% url 'add_product' %}" class="button is-dark is-uppercase mb-6">Add Product</a>
@@ -30,8 +29,6 @@
                     <th>Price</th>
                 </tr>
             </thead>
-
-
             <tbody>
                 {% for product in products %}
                 <tr>
@@ -40,7 +37,6 @@
                 </tr>
                 {% endfor %}
             </tbody>
-
         </table>
         {% else %}
         <p>You do not have any products yet...</p>
@@ -48,15 +44,14 @@
 
     </div>
 
-
-
+    <br>
     <div class="vendoradmin-box">
         <h2 class="is-size-3 mb-4">My Orders</h2>
 
         {% if orders %}
         {% for order in orders %}
         <div
-            class="{% if order.fully_paid %}has-background-success-light{% else %}has-background-info-light{% endif %} mb-2 p-4">
+            class="{% if order.fully_paid %}has-background-success-light{% else %}has-background-info-light{% endif %} mb-2">
             <div class="columns is-multiline">
                 <div class="column is-6">
                     <h3 class="is-size-4">#{{ order.id }} - {{ order.first_name }} {{ order.last_name }}</h3>
@@ -101,5 +96,4 @@
         {% endif %}
     </div>
 </div>
-
 {% endblock %}
