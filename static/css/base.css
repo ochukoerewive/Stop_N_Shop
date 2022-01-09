@@ -111,7 +111,6 @@ body {
     margin-left: 5%;
 }
 
-/*
 .card {
     width: 200px;
     height: 340px;
@@ -121,7 +120,7 @@ body {
     transition: 0.3s;
     text-align: center;
 }
-*/
+
 .container-card {
     display: flex;
 }

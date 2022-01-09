@@ -6,22 +6,22 @@
 {% block content %}
 
 
-<div class ="container-card">
+<div class="container-card">
     <div class="container-cardtext">
         <h2 class="NewestProduct">NEWEST PRODUCTS
             <hr>
         </h2>
     </div>
 
+    <div class="container-product">
+        <div class="row">
+        {% for product in newest_products %}
 
-
-<div class="container-product">
-    {% for product in newest_products %}
-
-    <!--Container for Newest Products-->
-    {% include 'product/parts/list_item.html' %}
-    <!--Container for Newest Products ends-->
-    {% endfor %}
-</div>
+        <!--Container for Newest Products-->
+        {% include 'product/parts/list_item.html' %}
+        <!--Container for Newest Products ends-->
+        {% endfor %}
+    </div>
+    </div>
 </div>
 {% endblock %}
