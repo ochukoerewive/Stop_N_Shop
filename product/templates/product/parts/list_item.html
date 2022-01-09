@@ -30,14 +30,16 @@
     </div>
 -->
 
-<div class="gallery">
+
     <div class="content">
         <img class="imgview" src="{{ product.get_thumbnail }}" alt="">
-        <div>
+        <div class="viewpage">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <h5 class="card-title">{{ product.title }}</h5>
             <h6 class="price-tag">${{ product.price }}</h6>
-            <a href="{% url 'product' product.category.slug product.slug %}" class="btn btn-primary viewpage">View</a>
+            <div>
+                <a href="{% url 'product' product.category.slug product.slug %}" class="btn btn-primary">View</a>
+                <a href="{% url 'product' product.category.slug product.slug %}" class="btn btn-primary">View</a>
+            </div>
         </div>
     </div>
-</div>
