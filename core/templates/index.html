@@ -6,6 +6,57 @@
 {% block content %}
 
 
+<div class="container-product">
+    <div class="row">
+
+        <div class="card">
+            <h1>it my time</h1>
+        </div>
+        <div class="card">
+            <h1>it my time</h1>
+        </div>
+        <div class="card">
+            <h1>it my time</h1>
+        </div>
+        <div class="card">
+            <h1>it my time</h1>
+        </div>
+        <div class="card">
+            <h1>it my time</h1>
+        </div>
+        <div class="card">
+            <h1>it my time</h1>
+        </div>
+        <div class="card">
+            <h1>it my time</h1>
+        </div>
+         <div class="card">
+            <h1>it my time</h1>
+        </div>
+        <div class="card">
+            <h1>it my time</h1>
+        </div>
+        <div class="card">
+            <h1>it my time</h1>
+        </div>
+        <div class="card">
+            <h1>it my time</h1>
+        </div>
+        <div class="card">
+            <h1>it my time</h1>
+        </div>
+        <div class="card">
+            <h1>it my time</h1>
+        </div>
+        <div class="card">
+            <h1>it my time</h1>
+        </div>
+    </div>
+</div>
+
+
+
+<!--
 <div class="container-card">
     <div class="container-cardtext">
         <h2 class="NewestProduct">NEWEST PRODUCTS
@@ -15,13 +66,16 @@
 
     <div class="container-product">
         <div class="row">
-        {% for product in newest_products %}
+            <div class="card">
+                {% for product in newest_products %}
 
-        <!--Container for Newest Products-->
-        {% include 'product/parts/list_item.html' %}
-        <!--Container for Newest Products ends-->
-        {% endfor %}
-    </div>
+                <!--Container for Newest Products-->
+                {% include 'product/parts/list_item.html' %}
+                <!--Container for Newest Products ends-->
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>
-{% endblock %}
+-->
+    {% endblock %}

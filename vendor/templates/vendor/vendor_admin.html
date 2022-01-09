@@ -5,8 +5,8 @@
 
 {% block content %}
 <div class="vendoradmin">
-    <div class="box">
-        <h1 class="tittle">Vendor admin - {{ vendor.name }}</h1>
+    <div class="">
+        <h1 class="boxAdmin">Vendor admin - {{ vendor.name }}</h1>
         <a href="{% url 'edit_vendor' %}" class="button is-danger is-uppercase">Edit Profile</a>
         <div>
             <strong>My balance:</strong>${{ vendor.get_balance }} <br>

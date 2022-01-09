@@ -4,8 +4,8 @@
 
 {% block content %}
 
-<div class="registrationForm">
-    <h1 class="vendoredit">Edit Vendor Info</h1>
+<div class="vendoredit">
+    <h1 class="edit">Edit Vendor Info</h1>
 
     <form method="post" action=".">
         {% csrf_token %}
@@ -30,12 +30,18 @@
             </div>
         </div>
         <br>
+        <div class="field">
+            <label>Phone Number</label>
+
+            <div class="control">
+                <input type="number" name="number" id="" value="" class="input">
+            </div>
+        </div>
         <br>
 
         <div class="field">
             <div class="control">
-                <button  class="col s12 btn btn-primary" type="button">Save Changes</button>
-               
+                <button class="btn btn-primary" type="button">Save Changes</button>
             </div>
         </div>
     </form>
