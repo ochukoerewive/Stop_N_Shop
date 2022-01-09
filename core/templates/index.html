@@ -5,77 +5,51 @@
 
 {% block content %}
 
-
+<!---
 <div class="container-product">
     <div class="row">
 
-        <div class="card">
-            <h1>it my time</h1>
-        </div>
-        <div class="card">
-            <h1>it my time</h1>
-        </div>
-        <div class="card">
-            <h1>it my time</h1>
-        </div>
-        <div class="card">
-            <h1>it my time</h1>
-        </div>
-        <div class="card">
-            <h1>it my time</h1>
-        </div>
-        <div class="card">
-            <h1>it my time</h1>
-        </div>
-        <div class="card">
-            <h1>it my time</h1>
-        </div>
-         <div class="card">
-            <h1>it my time</h1>
-        </div>
-        <div class="card">
-            <h1>it my time</h1>
-        </div>
-        <div class="card">
-            <h1>it my time</h1>
-        </div>
-        <div class="card">
-            <h1>it my time</h1>
-        </div>
-        <div class="card">
-            <h1>it my time</h1>
-        </div>
-        <div class="card">
-            <h1>it my time</h1>
-        </div>
-        <div class="card">
-            <h1>it my time</h1>
-        </div>
+        
     </div>
 </div>
 
 
+-->
 
-<!--
 <div class="container-card">
     <div class="container-cardtext">
         <h2 class="NewestProduct">NEWEST PRODUCTS
             <hr>
         </h2>
     </div>
+</div>
 
-    <div class="container-product">
-        <div class="row">
-            <div class="card">
-                {% for product in newest_products %}
 
-                <!--Container for Newest Products-->
-                {% include 'product/parts/list_item.html' %}
-                <!--Container for Newest Products ends-->
-                {% endfor %}
+
+<div class="container-product">
+
+    {% for product in newest_products %}
+
+    <!--Container for Newest Products -->
+    {% include 'product/parts/list_item.html' %}
+    <!--Container for Newest Products ends -->
+    {% endfor %}
+</div>
+
+
+
+{% endblock %}
+
+
+<!--
+    <div class="gallery">
+        <div class="content">
+            <img class="imgview" src="{{ product.get_thumbnail }}" alt="">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h5 class="card-title">{{ product.title }}</h5>
+                <h6 class="price-tag">${{ product.price }}</h6>
+                <a href="{% url 'product' product.category.slug product.slug %}" class="btn btn-primary viewpage">View</a>
             </div>
         </div>
     </div>
-</div>
--->
-    {% endblock %}

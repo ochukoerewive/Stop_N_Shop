@@ -1,18 +1,43 @@
 <!--Container for Newest Products-->
 
+<!--
 
 
-
-<div class="container">
+<div class="container-product">
     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
         <div class="card">
             <img src="{{ product.get_thumbnail }}" alt="" class="rounded">
             <div class="card-header">
                 <h5 class="card-title">{{ product.title }}</h5>
+                <h6 class="price-tag">${{ product.price }}</h6>
+                <a href="{% url 'product' product.category.slug product.slug %}"
+                    class="btn btn-primary viewpage">View</a>
+                    <a href="" class="btn btn-primary viewpage">Buy</a>
+            </div>     
+        </div>
+    </div>
+
+<!--
+<div class="container-product">
+    <div class="row">
+        <div class="card">
+            <img src="{{ product.get_thumbnail }}" alt="" class="rounded">
+            <h5 class="card-title">{{ product.title }}</h5>
                 <h6 class="price-tag">{{ product.price }}</h6>
                 <a href="{% url 'product' product.category.slug product.slug %}"
                     class="btn btn-primary viewpage">View</a>
-            </div>     
+        </div>
+    </div>
+-->
+
+<div class="gallery">
+    <div class="content">
+        <img class="imgview" src="{{ product.get_thumbnail }}" alt="">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h5 class="card-title">{{ product.title }}</h5>
+            <h6 class="price-tag">${{ product.price }}</h6>
+            <a href="{% url 'product' product.category.slug product.slug %}" class="btn btn-primary viewpage">View</a>
         </div>
     </div>
 </div>

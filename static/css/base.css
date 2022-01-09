@@ -29,6 +29,7 @@ body {
     padding-top: 180px;
     text-align: center;
     align-items: center;
+    margin-top:30px;
     
 }
 
@@ -70,14 +71,15 @@ body {
 /* admin page cascading ends */
 .vendoradmin {
     width: 80%;
-    margin:70px;
+    margin:100px;
     }
 
 .boxAdmin{
-    margin-top:150px;
+    margin-top:180px;
 }
 .boxproduct {
     padding-top: 60px;
+
 }
 /* admin page cascading ends */
 /* index page cascading ends */
@@ -99,17 +101,20 @@ body {
     display: flex;
 }
 .container-product{
-    margin-top: 150px;
+    margin-top: 10px;
     background-color: rgb(255, 255, 255);
-    padding:43px;
+    padding:20px;
     width: 90%;
     margin-left: 5%;
-}
+    display: flex;
+    float: left;
+
+    }
 
 .card {
     width: 200px;
     height: 340px;
-    margin-left:33px;
+    margin-left:20px;
     margin-bottom: 20px;
     background: #fff;
     border: 1px solid #ccc;
@@ -118,9 +123,44 @@ body {
     text-align: center;
 }
 
-.container-card {
-   
+
+
+
+
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    margin-left:10px;
+    margin-right: 20px;
 }
+
+.content{
+    width:180px;
+    height: 100%;
+   
+    box-sizing:border-box;
+    float:left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    
+    box-shadow: 0 14px 28px rgb(0,0,0,0.25),
+    0 10px 10px rgb(0,0,0,.22);
+    transition: .4s;
+    background: white;
+}
+.content:hover{
+    box-shadow: 0 3px 6px rgb(0,0,0,0.16),
+    0 3px 6px rgb(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+
+
+
 
 .overflow-hidden {
     width: 150px;
@@ -159,16 +199,14 @@ img {
     margin-left: 40%;
 }
   
-}
-/* CART STYLING */
 .titlecart {
-    margin-top: 135px;
+    margin-top: 179px;
     text-align: center;
 
 }
 .cartinfo1{
-    margin-top:300px;
-    margin-left: 30px;
+   margin-top:0px;
+   text-align: center;
 }
 
 .emptycart{

@@ -5,10 +5,11 @@
 
 {% block content %}
 
-<h1 class="titlecart">Cart</h1>
 
 {% if cart %}
-<div class="box mb-6">
+<div class="titlecart mb-6">
+    <h1 class="cartinfo1">Cart</h1>
+    <br>
     <div class="table">
         <table class="table is-fullwidth is-striped">
             <thead>
@@ -160,7 +161,8 @@
 
         <div class="field">
             <div class="controlCart">
-                <button class="button is-dark mt-4 is-uppercase">Checkout</button>
+                <button type="button" class=" btn btn-primary" type="button">Checkout</button>
+
             </div>
         </div>
     </div>
