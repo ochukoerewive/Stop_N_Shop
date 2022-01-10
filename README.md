@@ -15,6 +15,10 @@ The project is also deployed in Heroku on;
 https://rhodonitestore.herokuapp.com/
 ------------
 #
+## SuperUser Account Details
+User name: Admin
+Password: 1980jesus
+#
 
 ## USER EXPERIENCE (UX)
 The goal of the website is to get all information, and also see to it that all aspect is tourched as regards to the course outline. Its eductive and makes it easy for buyers to visit the site without coming back for more item to purchase, it's also built majorly for the Vendors, helping them creat an online store. Its is tested and also can be done or viewed via their phones, computer or even their tablets devices.
