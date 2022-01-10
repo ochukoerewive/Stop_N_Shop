@@ -29,9 +29,9 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['rhodonitestore.herokuapp.com','localhost']
 
-STRIPE_PUB_KEY = 'pk_test_51Jzwp9APQRv9kZVLpBcPcUzENuuJ8hNRjZ7zB5fKsFmCHN3YjkmlEb0E7efqwJfkYmJWDwySloFbTmhs1GgBHvxH00Q126HG2y'
-STRIPE_SECRET_KEY = 'sk_test_51Jzwp9APQRv9kZVLbTj9mMwE1GjUWPCcOKruyWz3WhkAvR9zmbqVBUddg63gHPbnU5USEc50UxFeIoPkseIcOaaT00pMZsUdJn'
-STRIPE_WH_SECRET = 'we_1KFSC3APQRv9kZVLXPpYW1km'
+STRIPE_PUB_KEY = os.environ.get('STRIPE_PUB_KEY')
+STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
+STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
 
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'vendor_admin'
@@ -41,12 +41,12 @@ SESSION_COOKIE_AGE = 86400
 CART_SESSION_ID = 'cart'
 
 # VENDOR EMAIL NOTIFICATION
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_BACKEND = os.environ.get('EMAIL_BACKEND')
+EMAIL_HOST = os.environ.get('EMAIL_BACKEND')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'kandochglobalservices@gmail.com'
-EMAIL_HOST_PASSWORD = '1980jesus'
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 # Application definition
 
 INSTALLED_APPS = [
@@ -63,7 +63,7 @@ INSTALLED_APPS = [
     'vendor',
 
     # Other
-   # 'storages',
+    #'storages',
 ]
 
 MIDDLEWARE = [

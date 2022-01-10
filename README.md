@@ -19,6 +19,8 @@ https://rhodonitestore.herokuapp.com/
 ## USER EXPERIENCE (UX)
 The goal of the website is to get all information, and also see to it that all aspect is tourched as regards to the course outline. Its eductive and makes it easy for buyers to visit the site without coming back for more item to purchase, it's also built majorly for the Vendors, helping them creat an online store. Its is tested and also can be done or viewed via their phones, computer or even their tablets devices.
 #
+A quick run through on how the app functions and runs. When registered or signed in, It takes you straight to the profile page, which also is the admin page for the user. from the home page you will see the newest product lined out which from there you can click the Button(view) item you like to purchase it will take you straight to the "ADD TO CHART page where you will see the image opened out for you to see in large screen. you will be asked how many you will want to purchase. After, you clich the checkout page to view the item already selected for purchase. there you will be asked for some personel information and your credit card details, which afterwards, you get to the thank you page.
+
 ## USER STORIES
 
 ### The Acceptance Criteria: 
