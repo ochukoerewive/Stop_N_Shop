@@ -16,8 +16,7 @@ https://rhodonitestore.herokuapp.com/
 ------------
 #
 ## SuperUser Account Details
-User name: Admin
-Password: 1980jesus
+Information given through via submission
 #
 
 ## USER EXPERIENCE (UX)
