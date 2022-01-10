@@ -4,12 +4,15 @@
 ## Full Stack Frameworks with Django Milestone Project.
 ![Front page view](media/readmeFiles/display1view.jpg)
 
-The RHODONITESTORE app is design and programmed to multi-task in which sellers are buyers can have a easy, witht he infomation right infront of them, easy clicks that takes you directly to the needed action required.
-Rhodonite-store is a multi-tasking app that involves sellers (vendors as well known in the project), to register and also upload their products to the market store whereby buyers can see and make their choices of what to buy. The app is interative, friendly and easy to navigate through in and out of it.
+The RHODONITESTORE app is design and programmed to multi-task in which sellers are buyers can navigate easily, with the infomation right infront of them, easy clicks that takes you directly to the needed action required.
+Rhodonite-store is a multi-tasking app that when inproved upon, can match toe to toe with one of the leading e-commerce site we have presently. It involves sellers (vendors as well known in the project), to register and also upload their products to the market store whereby buyers can see and make their choices of what to buy. The app is interative, friendly and easy to navigate through in and out of it.
+Both buyers and sellers, upon registration, have equal access to buy or to sell from their online store
 
-This website/app is presented by Ochuko Erewive. A "Full stack frameworks with Django Milestone Project course in Code Institude". It a site for educational purposes.
+This website/app is presented by Ochuko Erewive. A "Full stack frameworks with Django Milestone Project course in Code Institude". It a site strickly for educational purposes. It is built to have the basic and needed requirement for the purpose of the course.
 
 The project is also deployed in Heroku on;
+
+https://rhodonitestore.herokuapp.com/
 ------------
 #
 
@@ -104,6 +107,10 @@ The wireframes was designed using corel-draw platforms. It can be located in a f
 7.  Amazon
 
 #
+## SECRET KEYS
+All secret keys are collected from gitpod variable. The idea is to ensure its save.
+
+#
 ## TESTING
 The site was tested in google chrome, mozilla and windows browsers.
 # Compatibility testing
@@ -126,10 +133,10 @@ Tested on hardware devices, using Dell and Hp pcs.
 # DEOLOYMENT
 
 
+## Heroku Deployment (https://rhodonitestore.herokuapp.com/)
 
-## Heroku Deployment
-
-
+superuser: Admin
+password: 1980jesus
 
 
 ### Content

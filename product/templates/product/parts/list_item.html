@@ -2,7 +2,6 @@
 
 <!--
 
-
 <div class="container-product">
     <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
         <div class="card">
@@ -17,7 +16,7 @@
         </div>
     </div>
 
-<!--
+
 <div class="container-product">
     <div class="row">
         <div class="card">
@@ -34,13 +33,14 @@
     <div class="content">
         <img class="imgview" src="{{ product.get_thumbnail }}" alt="">
         <div class="viewpage">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="card.description">{{ product.description }}</p>
             <h5 class="card-title">{{ product.title }}</h5>
             <h6 class="price-tag">${{ product.price }}</h6>
-            <div>
+            
+            <div class="buttonitem">
                 {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
-                <a href="{% url 'product' product.category.slug product.slug %}" class="btn btn-primary">View</a>
+                <a href="{% url 'product' product.category.slug product.slug %}" class="btn btn-primary" >View</a>
                 {% endif %}
                            
               
