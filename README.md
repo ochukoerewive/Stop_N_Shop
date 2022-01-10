@@ -137,8 +137,6 @@ Tested on hardware devices, using Dell and Hp pcs.
 
 ## Heroku Deployment (https://rhodonitestore.herokuapp.com/)
 
-superuser: Admin
-password: 1980jesus
 
 
 ### Content
