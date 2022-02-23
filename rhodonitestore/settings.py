@@ -16,6 +16,8 @@ import dj_database_url
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-ochukoerewive-rhodonites-hdxbmpgl6jy.ws-us33.gitpod.io/']
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -27,7 +29,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['rhodonitestore.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['rhodonitestore.herokuapp.com', 'localhost']
 
 STRIPE_PUB_KEY = os.environ.get('STRIPE_PUB_KEY')
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
@@ -105,16 +107,16 @@ WSGI_APPLICATION = 'rhodonitestore.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 if 'DATABASE_URL' in os.environ:
-   DATABASES = {
-       'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-   }
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
 else:
-   DATABASES = {
-       'default': {
-           'ENGINE': 'django.db.backends.sqlite3',
-           'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-       }
-   }
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 # DATABASES = {
 #      'default': dj_database_url.parse('postgres://rxdpnusmsymnaw:e93aa4bc4d00357cbb32976a78e2af9023fc14b7430827d3d360b709003afb2e@ec2-3-227-55-25.compute-1.amazonaws.com:5432/d358fueoidjt7d'),
 # }
