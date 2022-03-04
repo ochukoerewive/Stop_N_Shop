@@ -10,6 +10,9 @@ from .forms import ProductForm
 
 # Create your views here.
 def become_vendor(request):
+    """
+    Here we will check if the form has been submitted, if not POST will be GET. also to validate user and direct to front page
+    """
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
 

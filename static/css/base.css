@@ -83,30 +83,29 @@ body {
 
 .container-cardtext {
     padding-top: 13%;
-    width: 100%
+    width: 100%;
 }
 
 .NewestProduct {
     text-align: center;
 }
 
-/* trying to get the card wworking */
+/* get the card working */
 .container {
     width: 90%;
     height: auto;
     margin:auto;
     display: flex;
 }
-.container-product{
-    margin-top: 10px;
-    background-color: rgb(255, 255, 255);
-    padding:20px;
+
+.container-product {
+       
     width: 90%;
     margin-left: 5%;
     display: flex;
     flex-wrap: wrap;
     }
-    
+/*    
 
 .card {
     width: 200px;
@@ -119,23 +118,24 @@ body {
     transition: 0.3s;
     text-align: center;
 }
-
+*/
 .content{
-    width:240px;
-    margin-left:35px;
-    margin-right:25px;
-    margin-top:20px;
+    width:200px;
+    margin:auto;
+    margin-top:25px;
     height: 340px;
     box-sizing:border-box;
     float:left;
     text-align: center;
-    border-radius: 20px;
+    align-items: center;
+    border-radius: 10px;
     cursor: pointer;
-    position:relative;
+    
     box-shadow: 0 14px 28px rgb(0,0,0,0.25),
     0 10px 10px rgb(0,0,0,.22);
     transition: .4s;
     background: white;
+    
 }
 .content:hover{
     box-shadow: 0 3px 6px rgb(0,0,0,0.16),

@@ -8,18 +8,17 @@
     <h1 class="title">Register to Become a Vendor</h1>
 <div class="container-form">
     <div class="row">
-        <form class="registrationForm" method="post" action=".">
+        <form class="registrationForm" method="post" >
             {% csrf_token %}
     
-              {{ form.as_p }} 
+            {{ form.as_p }} 
               
             <br>
 
             <div class="field">
                 <div class="control">
                     <button type="submit" class="col s12 btn btn-primary" type="button">Sign up</button>
-    <!--           <button class="button is-dark is-uppercase">Sign Up</button> -->
-                </div>
+                  </div>
             </div>
        </form>
 
