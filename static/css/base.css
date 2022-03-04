@@ -67,8 +67,11 @@ body {
 
 /* admin page cascading ends */
 .vendoradmin {
-    width: 80%;
-    margin:100px;
+    width: 70%;
+    margin:auto;
+    padding:60px;
+    background:white;
+
     }
 
 .boxAdmin{

@@ -72,7 +72,10 @@ The main navbar contains the
 + category and 
 + become a vendor which links you back to the registration page.
 
-4. SURFACE
+4. DELETING ITEMS OR REMOVING AN ITEM FROM CART
+    An item can be removed directly from CART or deleted from it. 
+
+5. SURFACE
 + Use of font awesome
 + Navigation color(grey)
 + Font color: black

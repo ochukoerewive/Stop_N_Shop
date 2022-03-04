@@ -34,6 +34,8 @@
                 <tr>
                     <td><a href="{% url 'product' product.category.slug product.slug %}">{{ product.title }}</a></td>
                     <td>${{ product.price }}</td>
+                    
+                    
                 </tr>
                 {% endfor %}
             </tbody>
