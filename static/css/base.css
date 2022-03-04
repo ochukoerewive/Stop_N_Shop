@@ -197,9 +197,12 @@ img {
 }
   
 .titlecart {
+    width: 70%;
+    margin:auto;
     margin-top: 179px;
     text-align: center;
-
+    background:white;
+  
 }
 .cartinfo1{
    margin-top:0px;
@@ -212,8 +215,22 @@ img {
 }
 
 .cartinfo {
+    width: 70%;
+    margin:auto;
     text-align: center;
+    background:white;
+  }
+
+.cartinformation{
+    width: 70%;
+    margin:auto;
+    text-align: center;
+    background:white;
 }
+.controlCart{
+    
+    margin-bottom: 20px;
+ }
 
 #payment-form {
     text-align: center;
