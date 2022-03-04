@@ -102,7 +102,6 @@ body {
 }
 
 .container-product {
-       
     width: 90%;
     margin-left: 5%;
     display: flex;
@@ -146,10 +145,16 @@ body {
     transform: translate(0px, -8px);
 }
 
-.buttonitem{
-    position: relative;
-    bottom: 0px;
-    
+.viewpage{
+    background:rgb(235, 235, 235);
+    height:25%;
+}
+
+.viewpage p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
 
 .imgview{
