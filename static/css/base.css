@@ -47,6 +47,77 @@ body {
     background-size: cover;
 }
 
+/* footer css starts */
+.inner-footer {
+    margin-top: 50px;
+    padding: 0;
+    background-color: rgb(70, 70, 70);
+    }
+
+.social-items ul{
+    display: flex;
+    width: 400px;
+    height: 60px;
+    padding:10px;
+    margin: auto;
+}
+
+.social-items {
+    list-style: none;
+    
+}
+
+.social-items a{
+    padding: 10px 20px;
+    font-size: 35px;
+    color: #6cccc6;
+    transition: all .25s;
+}
+.social-items a:hover{
+    color: #1c8881;
+}
+
+.quick-links{
+    display: flex;
+    width: 560px;
+    height: 70px;
+    margin: auto;
+}
+
+.quick-links ul{
+    display: flex;
+}
+
+.quick-items{
+    list-style: none;
+}
+
+.quick-items a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 20px;
+    color: white;
+    transition: all .25s;
+}
+.quick-items a:hover{
+    color: #6cccc6;
+
+}
+
+.outer-footer{
+    padding:10px;
+    text-align: center;
+    color:white;
+    font-size: 18px;
+    background-color:rgb(41, 41, 41);
+}
+/* footer css ends */
+
+
+
+
+
+
 .subtitle{
     text-align: center;
 }
@@ -152,9 +223,6 @@ body {
     height:134px;
 }
 
-.similar {
-    
-}
 
 .overflow-hidden {
     width: 150px;
