@@ -51,7 +51,7 @@ body {
 .inner-footer {
     margin-top: 50px;
     padding: 0;
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(42, 104, 155);
     }
 
 .social-items ul{
@@ -101,7 +101,6 @@ body {
 }
 .quick-items a:hover{
     color: #6cccc6;
-
 }
 
 .outer-footer{
@@ -109,7 +108,15 @@ body {
     text-align: center;
     color:white;
     font-size: 18px;
-    background-color:rgb(41, 41, 41);
+    background-color:rgb(11, 34, 97);
+}
+/* links in footer */
+.contact-us{
+    width:80%;
+    height:655px;
+    background: red;
+    padding-top:40px;
+    margin: auto;
 }
 /* footer css ends */
 
