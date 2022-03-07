@@ -11,15 +11,19 @@ class Vendor(models.Model):
     created_by = models.OneToOneField(User, related_name='vendor', on_delete=models.CASCADE)
 
     class Meta:
+        """requiring vendor's name"""
         ordering = ['name']
 
     def __str__(self):
+        """approved name"""
         return self.name
     
     def get_balance(self):
+        """payment of vendors fails"""
         items = self.items.filter(vendor_paid=False, order__vendors__in=[self.id])
         return sum((item.product.price * item.quantity) for item in items)
 
 def get_paid_amount(self):
+        """payment of vendors true"""
         items = self.items.filter(vendor_paid=True, order__vendors__in=[self.id])
         return sum((item.product.price * item.quantity) for item in items)

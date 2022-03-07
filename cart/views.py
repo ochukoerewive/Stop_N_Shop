@@ -9,8 +9,10 @@ from .forms import CheckoutForm
 
 from order.utilities import checkout, notify_customer, notify_vendor
 
+
 # Create your views here.
 def cart_detail(request):
+    """Cart details required/checkout/form/stripe and notification"""
     cart = Cart(request)
 
     if request.method == 'POST':
@@ -69,4 +71,5 @@ def cart_detail(request):
 
 
 def success(request):
+    """Return user after transaction to success page"""
     return render(request, 'cart/success.html')

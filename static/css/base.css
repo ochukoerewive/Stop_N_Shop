@@ -16,6 +16,8 @@ body {
     margin: auto;
     align-items: center;
 }
+
+
 .title{
     margin-top:150px;
     width:90%;
@@ -150,12 +152,13 @@ body {
     height:25%;
 }
 
-.viewpage p{
+.viewpage p{margin:10px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
 }
+
 
 .imgview{
     margin-top:20px;
@@ -168,8 +171,10 @@ body {
     width: 150px;
 }
 img {
-    margin-top: 10%;
+    margin-top: 15%;
     width: 100%;
+   align-items:center;
+  
     }
 
 .add-product {
@@ -212,6 +217,12 @@ img {
 .cartinfo1{
    margin-top:0px;
    text-align: center;
+}
+.title{
+    width: 80%;
+    margin:auto;
+    padding:60px;
+   /* background:white; */
 }
 
 .emptycart{

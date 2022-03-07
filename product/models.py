@@ -8,6 +8,7 @@ from vendor.models import Vendor
 
 # Create your models here.
 class Category(models.Model):
+    """ The category function """
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255)
     ordering = models.IntegerField(default=0)
@@ -19,6 +20,7 @@ class Category(models.Model):
         return self.title
 
 class Product(models.Model):
+    """ The product function collector """
     category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
     vendor = models.ForeignKey(Vendor, related_name='products', on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
@@ -36,6 +38,7 @@ class Product(models.Model):
         return self.title
     
     def get_thumbnail(self):
+        """ The category function """
         if self.thumbnail:
             return self.thumbnail.url
         else:

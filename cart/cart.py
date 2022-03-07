@@ -3,6 +3,8 @@ from django.conf import settings
 from product.models import Product
 
 class Cart(object):
+    """Session confirmation"""
+
     def __init__(self, request):
         self.session = request.session
         cart = self.session.get(settings.CART_SESSION_ID)
@@ -22,9 +24,11 @@ class Cart(object):
             yield item
     
     def __len__(self):
+        """Product adding all product cost"""
         return sum(item['quantity'] for item in self.cart.values())
     
     def add(self, product_id, quantity=1, update_quantity=False):
+        """Product add/subtract quantity"""
         product_id = str(product_id)
 
         if product_id not in self.cart:
