@@ -6,16 +6,17 @@ from django.shortcuts import render, get_object_or_404, redirect
 
 from .forms import AddToCartForm
 from .models import Category, Product
-
 from cart.cart import Cart
 
 def search(request):
+    """adding choice of product to cart """
     query = request.GET.get('query', '')
     products = Product.objects.filter(Q(title__icontains=query) | Q(description__icontains=query))
 
     return render(request, 'search.html', {'products': products, 'query': query})
 
 def product(request, category_slug, product_slug):
+    """request product information"""
     cart = Cart(request)
 
     product = get_object_or_404(Product, slug=product_slug)
@@ -42,6 +43,7 @@ def product(request, category_slug, product_slug):
     return render(request, 'product/product.html', {'form': form, 'product': product, 'similar_products': similar_products})
 
 def category(request, category_slug):
+    """category request"""
     category = get_object_or_404(Category, slug=category_slug)
 
     return render(request, 'category.html', {'category': category})

@@ -294,8 +294,11 @@ img {
 }
 
 .emptycart{
-    margin-top:440px;
-    margin-left:100px;
+    margin-top:355px;
+    margin-left:auto;
+    height: 300px;
+    text-align: center;
+    
 }
 
 .cartinfo {

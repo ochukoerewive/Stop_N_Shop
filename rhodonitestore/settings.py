@@ -13,7 +13,7 @@ import dj_database_url
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-ochukoerewive-rhodonites-hdxbmpgl6jy.ws-us34xl.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-ochukoerewive-rhodonites-hdxbmpgl6jy.ws-us34.gitpod.io']
 
 
 # Quick-start development settings - unsuitable for production

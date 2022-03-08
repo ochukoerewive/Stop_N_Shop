@@ -12,7 +12,7 @@ from order.utilities import checkout, notify_customer, notify_vendor
 
 # Create your views here.
 def cart_detail(request):
-    """Cart details required/checkout/form/stripe and notification"""
+    """Cart details required and rendering"""
     cart = Cart(request)
 
     if request.method == 'POST':
@@ -48,7 +48,8 @@ def cart_detail(request):
 
                 return redirect('success')
             except Exception:
-                messages.error(request, 'There is something wrong with the payment')
+                messages.error(request, 
+                'There is something wrong with the payment')
             
     else:
         form = CheckoutForm()
