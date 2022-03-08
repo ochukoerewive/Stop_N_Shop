@@ -121,10 +121,6 @@ body {
 /* footer css ends */
 
 
-
-
-
-
 .subtitle{
     text-align: center;
 }
@@ -192,7 +188,7 @@ body {
     width:200px;
     margin:auto;
     margin-top:25px;
-    height: 340px;
+    height: 317px;
     box-sizing:border-box;
     float:left;
     text-align: center;
@@ -212,16 +208,24 @@ body {
     transform: translate(0px, -8px);
 }
 
+
+
 .viewpage{
     background:rgb(235, 235, 235);
-    height:25%;
+    height:50px;
+    
 }
 
-.viewpage p{margin:10px;
+.viewpage p{
+    margin:10px;
+    height:50px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
+}
+.card-title{
+    margin-top:auto;
 }
 
 .imgview{
