@@ -8,12 +8,17 @@ from vendor.models import Vendor
 
 # Create your models here.
 class Category(models.Model):
-    """ The category function """
+    """ The category function also spelling check currection"""
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+        
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255)
     ordering = models.IntegerField(default=0)
 
     class Meta:
+        """ ordering """
         ordering = ['ordering']
 
     def __str__(self):
@@ -51,6 +56,7 @@ class Product(models.Model):
                 return 'https://via.placeholder.com/240x180.jpg'
     
     def make_thumbnail(self, image, size=(300, 200)):
+        """ Images convert """
         img = Image.open(image)
         img.convert('RGB')
         img.thumbnail(size)

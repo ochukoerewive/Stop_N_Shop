@@ -1,28 +1,25 @@
-
-
-
-    <div class="content">
-        <img class="imgview" src="{{ product.get_thumbnail }}" alt="">
-        <div class="viewpage">
-            <p class="card-description">{{ product.description }}</p>
-           <div>
+<div class="content">
+    <img class="imgview" src="{{ product.get_thumbnail }}" alt="">
+    <div class="viewpage">
+        <p class="card-description">{{ product.description }}</p>
+        <div>
             <h6 class="card-title">{{ product.title }}</h5>
-            <h6 class="price-tag">${{ product.price }}</h6>
+                <h6 class="price-tag">${{ product.price }}</h6>
         </div>
 
-           
-            <div class="buttonitem">
-                {% if request.user.is_authenticated %}
-                {% if request.user.is_superuser %}
-                <a href="{% url 'product' product.category.slug product.slug %}" class="btn btn-primary" >View</a>
-                {% endif %}
-                
-              
-                {% else %}
-             
-                <a href="{% url 'become_vendor' %}" class="btn btn-danger">View</a>
-                {% endif %}
-            </div>
-          
+
+        <div class="buttonitem">
+            {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+            <a href="{% url 'product' product.category.slug product.slug %}" class="btn btn-primary">View</a>
+            {% endif %}
+
+
+            {% else %}
+
+            <a href="{% url 'become_vendor' %}" class="btn btn-danger">View</a>
+            {% endif %}
         </div>
+
     </div>
+</div>

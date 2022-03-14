@@ -6,17 +6,19 @@
 {% block content %}
 
 
-<div>
+<div class="container">
     <div class="container-cardtext">
         <h2 class="NewestProduct"> {{category.title}} </h2>
+        <div cllass="card3">
+
+        {% for product in category.products.all %}
+
+        <!--Container for Newest Products-->
+        {% include 'product/parts/list_item.html' %}
+        <!--Container for Newest Products ends-->
+
+        {% endfor %}
     </div>
-
-    {% for product in category.products.all %}
-
-<!--Container for Newest Products-->
-    {% include 'product/parts/list_item.html' %}
-<!--Container for Newest Products ends-->
-
-{% endfor %}
+    </div>
 </div>
 {% endblock %}
