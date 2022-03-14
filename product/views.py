@@ -9,7 +9,7 @@ from .models import Category, Product
 from cart.cart import Cart
 
 def search(request):
-    """adding choice of product to cart """
+    """product query """
     query = request.GET.get('query', '')
     products = Product.objects.filter(Q(title__icontains=query) | Q(description__icontains=query))
 

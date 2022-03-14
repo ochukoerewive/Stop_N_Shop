@@ -5,6 +5,7 @@ from vendor.models import Vendor
 
 # Create your models here.
 class Order(models.Model):
+    """ Information required for order placed """
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
@@ -17,12 +18,14 @@ class Order(models.Model):
     vendors = models.ManyToManyField(Vendor, related_name='orders')
 
     class Meta:
+        """ Adding and substracting order to be placed """
         ordering = ['-created_at']
 
     def __str__(self):
         return self.first_name
 
 class OrderItem(models.Model):
+    """ knowing the quantity and the price for Item bought"""
     order = models.ForeignKey(Order, related_name='items', on_delete=models.CASCADE)
     product = models.ForeignKey(Product, related_name='items', on_delete=models.CASCADE)
     vendor = models.ForeignKey(Vendor, related_name='items', on_delete=models.CASCADE)
