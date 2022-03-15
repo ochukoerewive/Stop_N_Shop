@@ -33,6 +33,7 @@ def become_vendor(request):
 
 @login_required
 def vendor_admin(request):
+    """ product and ordering section"""
     vendor = request.user.vendor
     products = vendor.products.all()
     orders = vendor.orders.all()
@@ -55,6 +56,7 @@ def vendor_admin(request):
 
 @login_required
 def add_product(request):
+    """ Add a product to the store """
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
 
@@ -67,12 +69,13 @@ def add_product(request):
             return redirect('vendor_admin')
     else:
         form = ProductForm()
-
-    return render(request, 'vendor/add_product.html', {'form': form})
+    
+    return render(request, 'vendor/become_vendor.html', {'form': form})
 
 
 @login_required
 def edit_vendor(request):
+    """ posting information """
     vendor = request.user.vendor
 
     if request.method == 'POST':
@@ -92,12 +95,14 @@ def edit_vendor(request):
 
     #showing all vendor
 def vendors(request):
+    """ Showing all vendor """
     vendors = Vendor.objects.all()
 
     return render(request, 'vendor/vendors.html', {'vendors': vendors})
 
 # to show products of each vendor
 def vendor(request, vendor_id):
+    """  to show products of each vendor """
     vendor = get_object_or_404(Vendor, pk=vendor_id)
 
     return render(request, 'vendor/vendor.html', {'vendor': vendors})

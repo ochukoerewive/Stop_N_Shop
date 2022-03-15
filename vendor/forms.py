@@ -2,10 +2,9 @@ from django.forms import ModelForm
 
 from product.models import Product
 
-"""
-   Product form collection
-"""
+
 class ProductForm(ModelForm):
+    """Product form for adding details to the site"""
     class Meta:
         model = Product
         fields = ['category', 'image', 'title', 'description', 'price']
