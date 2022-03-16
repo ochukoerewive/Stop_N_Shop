@@ -43,19 +43,23 @@ class Cart(object):
         self.save()
     
     def remove(self, product_id):
+        """ if changing you mind in purchasing the item, it can be deleted"""
         if product_id in self.cart:
             del self.cart[product_id]
             self.save()
     
     def save(self):
+        """ self save"""
         self.session[settings.CART_SESSION_ID] = self.cart
         self.session.modified = True
     
     def clear(self):
+        """ self delete section"""
         del self.session[settings.CART_SESSION_ID]
         self.session.modified = True
     
     def get_total_cost(self):
+        """ getting the total cost of Item in cart """
         for p in self.cart.keys():
             self.cart[str(p)]['product'] = Product.objects.get(pk=p)
 

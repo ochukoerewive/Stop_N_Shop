@@ -7,4 +7,4 @@ class ProductForm(ModelForm):
     """Product form for adding details to the site"""
     class Meta:
         model = Product
-        fields = ['category', 'image', 'title', 'description', 'price']
+        fields = '__all__'

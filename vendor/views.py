@@ -74,6 +74,24 @@ def add_product(request):
 
 
 @login_required
+def update_product(request,pk):
+    """ Updating product already added """
+    product = Product.objects.get(id=pk)
+    
+    form = ProductForm(instance=product)
+
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            return redirect('index')
+    
+    return render(request, 'vendor/update_product.html', {'form': form})
+
+
+
+
+@login_required
 def edit_vendor(request):
     """ posting information """
     vendor = request.user.vendor
@@ -101,10 +119,6 @@ def vendors(request):
     return render(request, 'vendor/vendors.html', {'vendors': vendors})
 
 # to show products of each vendordef vendors(request):
-    """ Showing all vendor """
-    vendors = Vendor.objects.all()
-
-    return render(request, 'vendor/vendors.html', {'vendors': vendors})
 
 # to show products of each vendor
 def vendor(request, vendor_id):
