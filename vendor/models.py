@@ -4,7 +4,8 @@ from django.db import models
 # Create your models here.
 class Vendor(models.Model):
     """
-    Creating the profile page for each Vendor
+    Creating a profile model for maintaining default delivery
+    information and order history
     """
     name = models.CharField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)

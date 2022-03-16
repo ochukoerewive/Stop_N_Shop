@@ -6,13 +6,13 @@ from vendor.models import Vendor
 # Create your models here.
 class Order(models.Model):
     """ Information required for order placed """
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
-    email = models.CharField(max_length=100)
-    address = models.CharField(max_length=100)
-    zipcode = models.CharField(max_length=100)
-    place = models.CharField(max_length=100)
-    phone = models.CharField(max_length=100)
+    first_name = models.CharField(max_length=32, null=False, blank=False)
+    last_name = models.CharField(max_length=32, null=False, blank=False)
+    email = models.CharField(max_length=100, null=False, blank=False)
+    address = models.CharField(max_length=100, null=False, blank=False)
+    zipcode = models.CharField(max_length=20, null=False, blank=False)
+    place = models.CharField(max_length=100, null=False, blank=False)
+    phone = models.CharField(max_length=20, null=False, blank=False)
     created_at = models.DateTimeField(auto_now_add=True)
     paid_amount = models.DecimalField(max_digits=8, decimal_places=2)
     vendors = models.ManyToManyField(Vendor, related_name='orders')

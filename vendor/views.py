@@ -100,6 +100,12 @@ def vendors(request):
 
     return render(request, 'vendor/vendors.html', {'vendors': vendors})
 
+# to show products of each vendordef vendors(request):
+    """ Showing all vendor """
+    vendors = Vendor.objects.all()
+
+    return render(request, 'vendor/vendors.html', {'vendors': vendors})
+
 # to show products of each vendor
 def vendor(request, vendor_id):
     """  to show products of each vendor """
