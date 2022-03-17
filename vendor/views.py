@@ -55,7 +55,7 @@ def vendor_admin(request):
 
 
 @login_required
-def add_product(request):
+def add_product(request,pk):
     """ Add a product to the store """
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
@@ -73,20 +73,11 @@ def add_product(request):
     return render(request, 'vendor/become_vendor.html', {'form': form})
 
 
-@login_required
-def update_product(request,pk):
+def updateProduct(request, pk):
+    form = ProductForm()
     """ Updating product already added """
-    product = Product.objects.get(id=pk)
-    
-    form = ProductForm(instance=product)
-
-    if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES, instance=product)
-        if form.is_valid():
-            form.save()
-            return redirect('index')
-    
-    return render(request, 'vendor/update_product.html', {'form': form})
+       
+    return render(request, 'vendor/update_product.html', {'form':form})
 
 
 

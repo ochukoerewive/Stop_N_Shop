@@ -8,7 +8,7 @@
 <h1 class="add-product"> Add Product</h1>
 <hr>
 
-<form METHOD="post" action="." enctype="multipart/form-data" class="addproduct">
+<form METHOD="POST" action="." enctype="multipart/form-data" class="addproduct">
     {% csrf_token %}
 
     {{ form.as_p }}
