@@ -55,7 +55,7 @@ def vendor_admin(request):
 
 
 @login_required
-def add_product(request,pk):
+def add_product(request, pk):
     """ Add a product to the store """
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
@@ -77,7 +77,7 @@ def updateProduct(request, pk):
     form = ProductForm()
     """ Updating product already added """
        
-    return render(request, 'vendor/update_product.html', {'form':form})
+    return render(request, 'vendor/vendor_admin.html', {'form':form})
 
 
 
