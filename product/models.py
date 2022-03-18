@@ -18,11 +18,11 @@ class Category(models.Model):
     ordering = models.IntegerField(default=0)
 
     class Meta:
-        """ ordering """
         ordering = ['ordering']
 
     def __str__(self):
         return self.title
+
 
 class Product(models.Model):
     """ The product function collector """

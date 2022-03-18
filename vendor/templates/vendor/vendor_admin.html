@@ -36,8 +36,8 @@
                 <tr>
                     <td><a href="{% url 'product' product.category.slug product.slug %}">{{ product.title }}</a></td>
                     <td>${{ product.price }}</td>
-                    <td><a href="{% url 'update_product' product.id %}">Update</a></td>
-                    <td><a href="">Delete</td>
+                    <td><a href="{% url 'update_product' product.id %}" class="btn btn-danger m-1">Update</a></td>
+                    <td><a href="{% url 'deleteProduct' product.id %}" class="btn btn-danger m-1">Delete</td>
                     
                     
                 </tr>

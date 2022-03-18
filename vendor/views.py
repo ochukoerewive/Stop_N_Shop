@@ -55,10 +55,10 @@ def vendor_admin(request):
 
 
 @login_required
-def add_product(request, pk):
+def add_product(request):
     """ Add a product to the store """
     if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES)
+        form = ProductForm(request.POST)
 
         if form.is_valid():
             product = form.save(commit=False)
@@ -71,15 +71,6 @@ def add_product(request, pk):
         form = ProductForm()
     
     return render(request, 'vendor/become_vendor.html', {'form': form})
-
-
-def updateProduct(request, pk):
-    form = ProductForm()
-    """ Updating product already added """
-       
-    return render(request, 'vendor/vendor_admin.html', {'form':form})
-
-
 
 
 @login_required
@@ -117,3 +108,29 @@ def vendor(request, vendor_id):
     vendor = get_object_or_404(Vendor, pk=vendor_id)
 
     return render(request, 'vendor/vendor.html', {'vendor': vendors})
+
+
+
+
+@login_required
+def updateProduct(request, pk):
+    """ Updating product already added """
+    product = Product.objects.get(id=pk)
+    form = ProductForm(instance=product)
+
+    if request.method == 'POST':
+        """ Updating product already added """
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            return redirect('vendor_admin')
+    else:
+        form = ProductForm()
+    
+    return render(request, 'vendor/update_product.html', {'form':form})
+
+
+def deleteProduct(request,pk):
+    product = Product.objects.get(id=pk)
+    product.delete()
+    return redirect('vendor_admin')
