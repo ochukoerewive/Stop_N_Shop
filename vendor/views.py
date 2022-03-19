@@ -113,21 +113,19 @@ def vendor(request, vendor_id):
 
 
 @login_required
-def updateProduct(request, pk):
-    """ Updating product already added """
-    product = Product.objects.get(id=pk)
+def updateProduct(request, product_id):
+    """ Updating product already added in the store"""
+    product = get_object_or_404(Product, pk=product_id)
     form = ProductForm(instance=product)
 
     if request.method == 'POST':
         """ Updating product already added """
         form = ProductForm(request.POST, request.FILES, instance=product)
-        if form.is_valid():
-            form.save()
-            return redirect('vendor_admin')
-    else:
-        form = ProductForm()
-    
-    return render(request, 'vendor/update_product.html', {'form':form})
+        messages.info(request, f'You are editing {product.name}')
+
+
+        return render(request, 'vendor/update_product.html', {'form': form, 'product': product})
+
 
 
 def deleteProduct(request,pk):

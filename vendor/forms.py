@@ -8,3 +8,4 @@ class ProductForm(ModelForm):
         """Model is for the Product"""
         model = Product
         fields = '__all__'
+       
