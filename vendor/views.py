@@ -73,6 +73,13 @@ def add_product(request):
     return render(request, 'vendor/become_vendor.html', {'form': form})
 
 
+def deleteProduct(request,pk):
+    """function for deleting a particular item in store"""
+    product = Product.objects.get(id=pk)
+    product.delete()
+    return redirect('vendor_admin')
+
+
 @login_required
 def edit_vendor(request):
     """ posting information """
@@ -110,25 +117,23 @@ def vendor(request, vendor_id):
     return render(request, 'vendor/vendor.html', {'vendor': vendors})
 
 
-
-
 @login_required
-def updateProduct(request, product_id):
+def edit_product(request, product_id):
     """ Updating product already added in the store"""
     product = get_object_or_404(Product, pk=product_id)
-    form = ProductForm(instance=product)
 
     if request.method == 'POST':
-        """ Updating product already added """
         form = ProductForm(request.POST, request.FILES, instance=product)
-        messages.info(request, f'You are editing {product.name}')
-
-
-        return render(request, 'vendor/update_product.html', {'form': form, 'product': product})
-
-
-
-def deleteProduct(request,pk):
-    product = Product.objects.get(id=pk)
-    product.delete()
-    return redirect('vendor_admin')
+        if form.is_valid():
+            form.save()
+            
+            return redirect('vendor_admin')
+        else: 
+            messages.error(request, 'Failed to update product. Please ensure the form os valid')
+    else:
+        
+        
+        form = ProductForm(instance=product)
+   
+    
+    return render(request, 'vendor/edit_product.html', {'form': form, 'product': product})
