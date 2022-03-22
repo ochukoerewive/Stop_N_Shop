@@ -21,7 +21,7 @@ body {
 .title {
     width:80%;
     margin: auto;
-    margin-top:15%;
+    margin-top:5%;
     text-align: center;
     
 }
@@ -255,7 +255,7 @@ body {
     width: 150px;
 }
 img {
-    margin-top: 15%;
+    margin-top: 10%;
     width: 100%;
    align-items:center;
   
@@ -342,7 +342,10 @@ img {
     margin-bottom: 30px;
 }
 
-
+.productsimilar {
+    width:80%;
+    margin: auto;
+}
 
 /* INDEX-MEDIA PAGE SETTING */
 @media (max-width: 1074px){
