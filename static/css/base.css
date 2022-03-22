@@ -18,10 +18,10 @@ body {
 }
 
 
-.title{
-    margin-top:150px;
-    width:90%;
-    margin-left: 40px;
+.title {
+    width:80%;
+    margin: auto;
+    margin-top:15%;
     text-align: center;
     
 }
@@ -132,6 +132,10 @@ body {
 }
 
 /* Login section Ended */
+
+.editform {
+   margin-bottom:15%;
+}
 
 
 .rounded {
@@ -260,9 +264,12 @@ img {
 .add-product {
     padding-top: 10px;
     text-align: center;
+    margin-top: 15%;
 }
 
 .addproduct {
+    width: 70%;
+    margin:auto;
     padding-top: 2%;
     text-align: center;
 }
@@ -271,9 +278,6 @@ img {
     align-items: center;
 }
 
-.add-product {
-    margin-top: 15%;
-}
 
 .vendorlist {
     width: 70%;
@@ -298,12 +302,7 @@ img {
    margin-top:0px;
    text-align: center;
 }
-.title{
-    width: 80%;
-    margin:auto;
-    padding:60px;
-   /* background:white; */
-}
+
 
 .emptycart{
     margin-top:355px;

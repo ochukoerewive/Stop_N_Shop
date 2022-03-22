@@ -7,7 +7,8 @@
 <div class="vendoradmin">
     <div class="">
         <h1 class="boxAdmin">Vendor admin - {{ vendor.name }}</h1>
-        <a href="{% url 'edit_vendor' %}" class="button is-danger is-uppercase">Edit Profile</a>
+        <a href="{% url 'edit_vendor' %}" class="btn btn-primary m-1">Edit Profile</a>
+        
         <div>
             <strong>My balance:</strong>${{ vendor.get_balance }} <br>
             <strong>My paid amount:</strong>${{ vendor.get_paid_amount }}
@@ -19,7 +20,8 @@
     <div class="boxproduct">
         <h2 class="is-size-3 mb-4 ">My products</h2>
 
-        <a href="{% url 'add_product' %}" class="button is-dark is-uppercase mb-6">Add Product</a>
+        <a href="{% url 'add_product' %}" class="btn btn-primary m-1">Add Product</a>
+        
 
         {% if products %}
         <table class="table is-fullwidth">
@@ -36,7 +38,7 @@
                 <tr>
                     <td><a href="{% url 'product' product.category.slug product.slug %}">{{ product.title }}</a></td>
                     <td>${{ product.price }}</td>
-                    <td><a href="{% url 'edit_product' product.id %}" class="btn btn-danger m-1">Update</a></td>
+                    <td><a href="{% url 'edit_product' product.id %}" class="btn btn-primary m-1">Update</a></td>
                     <td><a href="{% url 'deleteProduct' product.id %}" class="btn btn-danger m-1">Delete</td>
                     
                     

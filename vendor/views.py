@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.utils.text import slugify
 from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib import messages
 
 from .models import Vendor
 from product.models import Product
@@ -70,7 +71,7 @@ def add_product(request):
     else:
         form = ProductForm()
     
-    return render(request, 'vendor/become_vendor.html', {'form': form})
+    return render(request, 'vendor/add_product.html', {'form': form})
 
 
 def deleteProduct(request,pk):
@@ -126,10 +127,10 @@ def edit_product(request, product_id):
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
-            
+            messages.success(request, 'Successfully updated product!')
             return redirect('vendor_admin')
         else: 
-            messages.error(request, 'Failed to update product. Please ensure the form os valid')
+            messages.error(request, 'Failed to update product. Please ensure form is valid.')
     else:
         
         

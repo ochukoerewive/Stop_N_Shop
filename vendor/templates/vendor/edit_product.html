@@ -1,31 +1,32 @@
  {% extends "base.html" %}
 
-{% block title %} Add Product | {% endblock %}
+ {% block title %} Add Product | {% endblock %}
 
-{% block content %}
-   
-<h1 class="add-product"> Edit A Product</h1>
-<hr>
-
-<div class="container m-5">
-    
-<form METHOD="POST" action="" enctype="multipart/form-data" class="addproduct">
-    
-    {% csrf_token %}
-    
-    {{ form.as_p }} 
-      
-  
-    <div class="field">
-        <div class="control">
-            <a class="btn btn-outline-black rounded-0" href="">Cancel</a>
-            <button class="button is-dark is-uppercase">Update Product</button>
-        </div>
-    </div>
+ {% block content %}
 
 
-</form>
-</div>
+ <h1 class="add-product"> Edit A Product</h1>
+ <hr>
+ {% for message in messages %} {{ message }} {% endfor %}
+ <div class="addproduct">
+     
+         <form METHOD="POST" action="" enctype="multipart/form-data" class="formtag">
+
+             {% csrf_token %}
+
+             {{ form.as_table }}
 
 
-{% endblock %}
+             <div class="field">
+                 <div class="control">
+                     <button class="btn btn-primary m-1"> Update Product</button>
+                 </div>
+             </div>
+
+
+         </form>
+
+ </div>
+
+
+ {% endblock %}

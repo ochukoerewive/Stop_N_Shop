@@ -3,23 +3,23 @@
 {% block title %} Add Product | {% endblock %}
 
 {% block content %}
-<section class="">
-   
+
 <h1 class="add-product"> Add Product</h1>
 <hr>
+<div class="addproduct">
+    <form METHOD="POST" action="" enctype="multipart/form-data" class="">
 
-<form METHOD="POST" action="." class="addproduct">
-    {% csrf_token %}
+        {% csrf_token %}
 
-    {{ form.as_p }}
+        {{ form.as_table }}
 
-    <div class="field">
-        <div class="control">
-            <button class="button is-dark is-uppercase">Submit</button>
+
+        <div class="field">
+            <div class="control">
+                <button class="btn btn-primary m-1"> Add Product</button>
+            </div>
         </div>
-    </div>
 
-
-</form>
-</section>
+    </form>
+</div>
 {% endblock %}
