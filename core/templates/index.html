@@ -27,6 +27,27 @@
 </div>
 
 
+<br/></br/>
+{{ newest_products }} <br/>
+Has Previous: {{ newest_products.has_previous }} <br/>
+Has Next: {{ newest_products.has_Next }} <br/>
+Current Page: {{ newest_products.number }} <br/>
+Number of Pages: {{ newest_products.paginator.num_pages }}<br/>
+
+<hr><br/><br/>
+
+{% if newest_products.has_previous %}
+<a href="?page=1">&laquo First</a>
+<a href="?page={{ newest_products.previous_page_number }}">Previous</a>
+{% endif %}
+
+page {{ newest_products.number }} of {{ newest_products.paginator.num_pages }}
+
+{% if newest_products.has_next %}
+    <a href="?page={{ newest_products.next_page_number }}">Next</a>
+    <a href="?page={{ newest_products.paginator.num_pages }}">Last &raquo</a>
+
+    {% endif %}
 
 {% endblock %}
 
