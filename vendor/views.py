@@ -9,7 +9,7 @@ from .models import Vendor
 from product.models import Product
 from .forms import ProductForm
 
-
+ 
 # Create your views here.
 def become_vendor(request):
     """

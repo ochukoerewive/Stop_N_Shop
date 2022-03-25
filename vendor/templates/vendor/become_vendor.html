@@ -3,23 +3,63 @@
 {% block content %}
 
 <div class="registration">
-    <h1 class="title">Register to Become a Vendor</h1>
+   
     <div class="container-form">
         <div class="row">
             <form class="registrationForm" method="POST">
+                <h1 class="signupform">Register to Become a Vendor</h1>
                 {% csrf_token %}
                 {{ form.as_p }}
 
                 <br>
+<!--
+                <div class="col-md-6 offset-md-3">
+                    <div class="signup-form">
+                        <form action="" class="mt-5 border p-4 bg-light shadow">
+                            <h3 class="mb-4">Create Your Account</h3>
+                            <br>
+                            <div class="row">
+                                <div class="mb-3 col-md-12">
+                                    <i class="fas fa-user-circle prefix"></i>
+                                    <label for>Username</label>
+                                    <input type="text" name="username" class="form-control" placeholder="Username"
+                                        required>
+                                </div>
+
+                                <div class="mb-3 col-md-12">
+                                    <i class="fas fa-key"></i>
+                                    <label for="">Password</label>
+                                    <input type="password" name="password" class="form-control"
+                                        placeholder="Enter Password" required>
+                                </div>
+                                <div class="mb-3 col-md-12">
+                                    <i class="fas fa-key"></i>
+                                    <label for="">Confirm Password</label>
+                                    <input type="password" name="confirmpassword" class="form-control"
+                                        placeholder="Re-enter Password" required>
+                                </div>
+                                <div class="mb-3 col-md-12">
+                                    <button type="submit" class="btn btn-primary float-end">Signup Now</button>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="text-center mt-5">Already have an account?<a href="{% url 'login' %}">Login Now</a>
+                        </p>
+                    </div>
+                </div>
+
+
+-->
 
                 <div class="field">
                     <div class="control">
-                        <button type="submit" class="col s6 btn btn-primary" type="button">Sign up</button>
+                        <button type="submit" class="btn btn-primary" type="button">Sign up</button>
                     </div>
                 </div>
             </form>
 
             <hr>
+
 
             <h2 class="subtitle">Already have an account? <a href="{% url 'login' %}">Log in</a> </h2>
 
@@ -30,4 +70,4 @@
 
 
 
-{% endblock %}
+    {% endblock %}
