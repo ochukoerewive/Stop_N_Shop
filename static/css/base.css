@@ -98,6 +98,7 @@ body {
 
 .quick-links ul{
     display: flex;
+    margin-left: 20%;;
 }
 
 .quick-items{
@@ -223,7 +224,7 @@ body {
     text-align: center;
     align-items: center;
     border-radius: 10px;
-    cursor: pointer;
+   /* cursor: pointer; */
     
     box-shadow: 0 14px 28px rgb(0,0,0,0.25),
     0 10px 10px rgb(0,0,0,.22);
@@ -358,6 +359,65 @@ img {
     width:80%;
     margin: auto;
 }
+
+/* About us Starts */
+.about_us{
+    text-align: center;
+    padding-top:30px ;
+}
+
+.aboutcontent {
+    text-align: justify;
+}
+.social_links a {
+    margin:30px;
+}
+
+.section{
+    width:100%;
+    min-height:58vh;
+    /*background-color:#ddd; */
+}
+
+.section .container {
+    width: 80%;
+    display: block;
+    margin:auto;
+    margin-top:13%;
+    background-color: white;
+}
+
+.content-section {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    }
+
+  /*  
+.image-section {
+    float: right;
+    width:40%;
+    margin-top:5%;
+    background-color: #1c8881;
+    height: 500px;
+}
+
+
+.social_links img {
+    width:300px;
+    height:300px;
+    align-items: center;;
+   
+    background-image: url(/media/profile-pix.jpeg);
+    
+    box-shadow: 0 14px 28px rgb(0,0,0,0.25),
+    0 10px 10px rgb(0,0,0,.22);
+    transition: .4s;
+   
+}
+*/
+/*
+ About Us ends*/
 
 
 

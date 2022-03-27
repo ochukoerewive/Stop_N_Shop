@@ -12,14 +12,14 @@ def index(request):
     newest_products = Product.objects.all()[0:100]
 
     #Setup paginaion
-    p = Paginator(Product.objects.all(), 10)
+    p = Paginator(Product.objects.all(), 12)
     page = request.GET.get('page')
     newest_products = p.get_page(page)
     nums = "a" * newest_products.paginator.num_pages
     
     return render(request, 'index.html', {'newest_products': newest_products, 'nums': nums })
 
-def contact(request):
-    """ creating view page for contact us"""
-    return render(request, 'contact.html')
+def about_us(request):
+    """ creating view page for about us"""
+    return render(request, 'about_us.html', {})
     
