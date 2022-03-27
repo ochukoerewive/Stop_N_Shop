@@ -12,9 +12,9 @@
 
         <div class="buttonitem">
             {% if request.user.is_authenticated %}
-            {% if request.user.is_superuser %}
+        
             <a href="{% url 'product' product.category.slug product.slug %}" class="btn btn-primary">View</a>
-            {% endif %}
+            
 
 
             {% else %}

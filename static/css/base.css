@@ -26,7 +26,9 @@ body {
     align-items: center;
 }
 
-
+.account1 {
+    margin:10%;
+}
 
 .title {
     width:80%;
@@ -49,7 +51,7 @@ body {
 
 .loginForm {
     width: 70%;
-    height: 45vh;
+    height: 51vh;
     padding: 20px;
     margin: auto;
     align-items: center;  
@@ -133,6 +135,7 @@ body {
 
 .subtitle{
     text-align: center;
+    margin-bottom:35px;
 }
 .vendoredit{
     margin-top: 20%;
@@ -317,7 +320,7 @@ img {
 .emptycart{
     margin-top:355px;
     margin-left:auto;
-    height: 300px;
+    height: 44vh;
     text-align: center;
     font-size: 40px;
     
@@ -386,9 +389,8 @@ img {
        margin-left: 43px;
         align-items: center;
     }
-    .title{
-
-    }
+   
+    
 }
 
 @media (max-width: 800px) {
