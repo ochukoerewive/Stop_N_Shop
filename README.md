@@ -23,12 +23,21 @@ Information given through via submission
 #
 
 ## USER EXPERIENCE (UX)
-The goal of the website is to get all information, and also see to it that all aspect is tourched as regards to the course outline. Its eductive and makes it easy for buyers to visit the site without coming back for more item to purchase, it's also built majorly for the Vendors, helping them creat an online store. Its is tested and also can be done or viewed via their phones, computer or even their tablets devices.
+The goal of the website is to get all information, and also see to it that all aspect is tourched as regards to the course outline. Its eductive and the site makes it easy for buyers to visit to purchase items, it's also built majorly for an ope market, Helping to create an online store. 
 #
-A quick run through on how the app functions and runs. When registered or signed in, It takes you straight to the profile page, which also is the admin page for the user. from the home page you will see the newest product lined out which from there you can click the Button(view) item you like to purchase it will take you straight to the "ADD TO CHART page where you will see the image opened out for you to see in large screen. you will be asked how many you will want to purchase. After, you clich the checkout page to view the item already selected for purchase. there you will be asked for some personel information and your credit card details, which afterwards, you get to the thank you page.
+A quick run through on how the app functions and runs.
+When registered or signed in, It takes you straight to your admin page(Profile page), there you could see all your purchases and products. In your admin page, you can edit your name, also edit your products by updating and in addition, delete any product you no longer need in your store.
+
+In your admin page, the CRUD functionality is shown and functioning.
+#
+From the home page,
+* the newest product lined out first before the other product.
+* To click a product of choice, you will have to click the view button which add straight to the add to cart page.
+* You will be asked how many you will want to purchase.
+* From the Cart page, personnel form for shipping and also payment details is required.
+* Then a successful page
 
 ## USER STORIES
-
 ### The Acceptance Criteria: 
 This is to ensure the major focus is carried out which are the following;
 + Search for a product by name or category.
@@ -45,15 +54,22 @@ Other User Stories are;
 + Make it possible to update quantity
 + Make is possible to checkout
 + Make it possible to edit vendor
++ Make it possible to update product in the Admin Page
++ Make it possible to delete a product right from the Vendor Admin page
 + Notify the vendor after a sale
+![Home page](media/readmeFiles/home-page.JPG)
+![Update and Delete](media/readmeFiles/crud.JPG)
+![Update Product](media/readmeFiles/update.JPG)
+
+
 #
 ## UX FRAMEWORK
 1. STRATEGY
-It's to create a virtual market place whereby vendors are registered and given a store which is opened and easy to view from both registered user or guest user. The website has the ability to edit, update and delete any product by the the owner of the registered account.
-It's designed usinging the following programming code: HTML, CSS, JAVASCRIP, PYTHON-3 and DJANGO. The main goal is to see that all function are functioning  accordingly.
+To create a virtual market place whereby vendors are registered and given a store which is opened and easy to view. The website has the ability to edit, update and delete any product by the the owner of the registered account.
+It's designed using the following programming code: HTML, CSS, JAVASCRIP, PYTHON-3 and DJANGO. The main goal is to see how well to apply te knowledge learnt and that all function are functioning  accordingly.
 
 2. SCOPE
-The app is interactive and allows users to input information, edit and also delete information at their discresion. This website has CRUD functionality.
+To ensure CRUD availability/functionality to show site is interactive and allows users to input information, edit and also delete information at their discresion.
 
 The functionality requirements includes the following:
 + My Account
@@ -62,18 +78,17 @@ The functionality requirements includes the following:
 + Home
 + All Products
 + Categories
-+ Become a vendor
-+ List of vendors
++ Become a vendor(Registeration)
++ List of vendors(This page is ristricted for only admin)
 Add product
 + Profile page(Vendor Admin)
 #
 3. STRACTURE
-When the website is lunched, it takes you to the index page which is the home page. At the righthand side of the screen, you will fine My Account button which the drop down menu contains the login and registeration button to take you to the registeration page.
+When the website is lunched, it takes you to your created admin page. At the righthand side of the screen, you will fine My Account button which the drop down menu contains the login and registeration button to take you to the registeration page.
 The main navbar contains the
 + Home page,
 + product,
-+ category and 
-+ become a vendor which links you back to the registration page.
++ category
 
 4. DELETING ITEMS OR REMOVING AN ITEM FROM CART
     An item can be removed directly from CART or deleted from it. 
@@ -98,7 +113,7 @@ The wireframes was designed using corel-draw platforms. It can be located in a f
 4.  Profile page(Vendor Admin)
 5.  Uploading product and category
 6.  Working Navbar
-7.  Edit/Delete functionality for user
+7.  CRUD functionality for user
 8.  Add to cart functionality
 9.  Stripe payments system(the card number to use is:
 
@@ -123,13 +138,15 @@ All secret keys are collected from gitpod variable. The idea is to ensure its sa
 
 #
 ## TESTING
-The site was tested in google chrome, mozilla and windows browsers.
-# Compatibility testing
-Also tested across multiple mobile devices and bowsers.
+It is tested on phone devices, computer laptop and computer desktop. On browser, we tested it on google Chrome, windows browser, firefox browser and mozilla.
+
 Tested on hardware devices, using Dell and Hp pcs.
 
 # Performace testing
+Tested some function in the Vendor(view and models) to reduce bugs and error flags.
 ![Performace testing](media/readmeFiles/testing0.JPG)
+#
+![Performace testing](media/readmeFiles/testing2.JPG)
 
 ## Code Validation
 
