@@ -35,6 +35,7 @@
                 </div>
                 <br>
                 <button class="button-control btn btn-primary">Add to cart</button>
+                <a href="{% url 'cart' %}" class="btn btn-primary m-4">Check Out Item</a>
             </div>
             {% endif %}
 
@@ -50,14 +51,16 @@
             </div>
             <div class="card">
                 <div class="rol">
-                {% for product in similar_products %}
-                {% include 'product/parts/list_item.html' %}
-                {% endfor %}
+                    {% for product in similar_products %}
+                    {% include 'product/parts/list_item.html' %}
+                    {% endfor %}
+                </div>
             </div>
-            </div>
+                    
         </div>
+        
         {% endif %}
     </div>
 </div>
 
-    {% endblock %}
+{% endblock %}
