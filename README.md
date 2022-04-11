@@ -65,8 +65,9 @@ Other User Stories are;
 #
 ## UX FRAMEWORK
 1. STRATEGY
-To create a virtual market place whereby vendors are registered and given a store which is opened and easy to view. The website has the ability to edit, update and delete any product by the the owner of the registered account.
-It's designed using the following programming code: HTML, CSS, JAVASCRIP, PYTHON-3 and DJANGO. The main goal is to see how well to apply te knowledge learnt and that all function are functioning  accordingly.
+To create a virtual market place whereby vendors are registered and given a store which is opened and easy to view. The website has the ability to edit, update and delete any product by choice.
+It's designed to show a structural functionality from the registration to ordering of product also adding of product.
+It's designed using the following programming code: HTML, CSS, JAVASCRIP, PYTHON-3 using DJANGO framework. The main goal is to see how well to apply te knowledge learnt and that all function are functioning  accordingly.
 
 2. SCOPE
 To ensure CRUD availability/functionality to show site is interactive and allows users to input information, edit and also delete information at their discresion.

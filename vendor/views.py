@@ -8,6 +8,8 @@ from django.contrib import messages
 from .models import Vendor
 from product.models import Product
 from .forms import ProductForm
+from order.models import OrderItem
+#from cart.views import cart_detail
 
  
 # Create your views here.
@@ -23,7 +25,7 @@ def become_vendor(request):
 
             login(request, user)
 
-            #vendor = Vendor.objects.filter(created_by=user)
+            vendor = Vendor.objects.filter(created_by=user)
 
             vendor = Vendor.objects.create(name=user.username, created_by=user)
 
@@ -139,3 +141,9 @@ def edit_product(request, product_id):
    
     
     return render(request, 'vendor/edit_product.html', {'form': form, 'product': product})
+
+
+def order_history(request, order_id):
+    order = get_object_or_404(Order, order_number=order_number)
+
+    return render(request,' order_history.html', { 'order': order} )

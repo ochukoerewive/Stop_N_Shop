@@ -7,6 +7,7 @@ from cart.cart import Cart
 from .models import Order, OrderItem
 
 def checkout(request, first_name, last_name, email, address, zipcode, place, phone, amount):
+    """CheckOut notification"""
     order = Order.objects.create(first_name=first_name, last_name=last_name, email=email, address=address, zipcode=zipcode, place=place, phone=phone, paid_amount=amount)
 
     for item in Cart(request):
@@ -19,6 +20,7 @@ def checkout(request, first_name, last_name, email, address, zipcode, place, pho
 
 # email function
 def notify_vendor(order):
+    """purchased notification to vendor"""
     from_email = settings.DEFAULT_EMAIL_FROM
 
     for vendor in order.vendors.all():
@@ -32,6 +34,7 @@ def notify_vendor(order):
         msg.send()
 
 def notify_customer(order):
+    """customers notification"""
     from_email = settings.DEFAULT_EMAIL_FROM
 
     TO_EMAIL = ORDER.EMAILSUBJECT = 'Order confirmation'

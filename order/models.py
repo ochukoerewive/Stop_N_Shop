@@ -6,6 +6,7 @@ from vendor.models import Vendor
 # Create your models here.
 class Order(models.Model):
     """ Information required for order placed """
+    #order_number = models.CharField(max_length=32, null=False, editable=False)
     first_name = models.CharField(max_length=32, null=False, blank=False)
     last_name = models.CharField(max_length=32, null=False, blank=False)
     email = models.CharField(max_length=100, null=False, blank=False)

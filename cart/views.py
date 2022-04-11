@@ -48,8 +48,7 @@ def cart_detail(request):
 
                 return redirect('success')
             except Exception:
-                messages.error(request, 
-                'There is something wrong with the payment')
+                messages.error(request, 'There is something wrong with the payment')
             
     else:
         form = CheckoutForm()

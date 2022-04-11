@@ -420,7 +420,10 @@ img {
  About Us ends*/
 
 
-
+.order-history{
+    max-height:416px; /* height of form plus submitbutton */
+    overflow-y:auto;
+}
 /* INDEX-MEDIA PAGE SETTING */
 @media (max-width: 1074px){
 

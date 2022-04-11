@@ -15,4 +15,5 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(template_name='vendor/login.html'), name='login'),
     path('', views.vendors, name='vendors'),
     path('vendor<int:vendor_id>/', views.Vendor, name='vendor'),
+    path('order_history/<order_number>', views.order_history, name='order_history'),
 ]

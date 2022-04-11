@@ -14,7 +14,7 @@ import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-ochukoerewive-rhodonites-hdxbmpgl6jy.ws-us38.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-ochukoerewive-rhodonites-hdxbmpgl6jy.ws-us39.gitpod.io']
 
 
 # Quick-start development settings - unsuitable for production
