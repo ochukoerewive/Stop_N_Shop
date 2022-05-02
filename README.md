@@ -85,19 +85,27 @@ Add product
 + Profile page(Vendor Admin)
 #
 3. STRACTURE
-When the website is lunched, it takes you to your created admin page. At the righthand side of the screen, you will fine My Account button which the drop down menu contains the login and registeration button to take you to the registeration page.
+When the website is lunched, it takes you to the home page whereby you can view but by clicking on any item, it takes you to the registration page to get your details.
+upon getting details, that means you have been registered. then you are redirected to the home page where the view button is now blue.
+this indicates that you are registered and you have full access to the web page; whereby you can upload product and delete product you uplaoded.
 The main navbar contains the
-+ Home page,
-+ product,
-+ category
++ Home page: By clicking on the home page, it takes your back to the home page where you may start all over in your search.
++ product: Containing products inputed/created by the admin
++ category: Containes the list of categorized items in the web page. By clicking from the drop down, you can click on any of the list which brings to you a filtered search requested by you.
+#
+* VIEW BUTTON: To click the view button, it takes you to the "Add to Cart" page where you can either add the number of the item you wish to purchase.
+#
 
-4. DELETING ITEMS OR REMOVING AN ITEM FROM CART
+* DELETING ITEMS OR REMOVING AN ITEM FROM CART
     An item can be removed directly from CART or deleted from it. 
 
-5. SURFACE
-+ Use of font awesome
-+ Navigation color(grey)
-+ Font color: black
+4. SKELETON: 
+
+* SURFACE:
+    + Use of font awesome
+    + Navigation and base color: Grey
+    + Font color: Black
+    + Footer color: Blue
 
 ## WIREFRAME
 The wireframes was designed using corel-draw platforms. It can be located in a folder called "ReadmeFiles" and also it is uploaded to github for assessment.
@@ -158,6 +166,10 @@ Tested some function in the Vendor(view and models) to reduce bugs and error fla
 + Nu Html Checker to test HTML.
 + Python code was validated using the ExtendsClass Python Syntax Checker with no syntax errors found.
 #
+
+# THINGS TO PERFECT LATER
++   The User Pforfile page specifically for all information related to his uploaded orders and also order purchased from his store.
+* Populating the menu bar and adding  some functions in the site as regars to each store owner.
 
 # DEOLOYMENT
 
