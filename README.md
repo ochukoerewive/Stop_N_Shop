@@ -170,7 +170,7 @@ Tested some function in the Vendor(view and models) to reduce bugs and error fla
 # THINGS TO PERFECT LATER
 +   The User Pforfile page specifically for all information related to his uploaded orders and also order purchased from his store.
 * Populating the menu bar and adding  some functions in the site as regars to each store owner.
-
+#
 # DEOLOYMENT
 
 
