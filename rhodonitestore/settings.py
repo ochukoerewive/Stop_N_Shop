@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['admin-rhodonitestore.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['rhodonitestore.herokuapp.com', 'localhost']
 
 STRIPE_PUB_KEY = os.environ.get('STRIPE_PUB_KEY')
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
