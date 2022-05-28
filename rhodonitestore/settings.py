@@ -25,7 +25,7 @@ CSRF_TRUSTED_ORIGINS = ['https://8000-ochukoerewive-rhodonites-hdxbmpgl6jy.ws-us
 SECRET_KEY = os.getenv('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['rhodonitestore.herokuapp.com', 'localhost']
 
