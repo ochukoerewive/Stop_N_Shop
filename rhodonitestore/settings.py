@@ -109,7 +109,7 @@ WSGI_APPLICATION = 'rhodonitestore.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse('postgres://rxdpnusmsymnaw:e93aa4bc4d00357cbb32976a78e2af9023fc14b7430827d3d360b709003afb2e@ec2-3-227-55-25.compute-1.amazonaws.com:5432/d358fueoidjt7d')
     }
 else:
     DATABASES = {
