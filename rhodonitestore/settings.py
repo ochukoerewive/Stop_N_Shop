@@ -62,7 +62,7 @@ INSTALLED_APPS = [
     'order',
     'product',
     'vendor',
-    #'storage',
+    'storages',
     # Other
 ]
 
